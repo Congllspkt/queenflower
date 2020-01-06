@@ -7,17 +7,21 @@ DIỆN TÍCH:                            <input type="number" id="B3" onkeyup="m
 
 
 
-CHI PHÍ THU HOẠCH VÀ PHÂN LOẠI:       <input type="number" id="xxxxxxx" disabled> <br><br>
-CHI PHÍ VẬN CHUYỂN:                             <input type="number" id="xxxxxxx" disabled> <br><br>
-TỔNG SẢN LƯỢNG (TẤN):                             <input type="number" id="xxxxxxx" disabled> <br><br>
+<!-- CHI PHÍ THU HOẠCH VÀ PHÂN LOẠI:       <input type="text" id="B4" > <br><br> -->
+<!-- CHI PHÍ VẬN CHUYỂN:                   <input type="text" id="B5" > <br><br> -->
+<!-- TỔNG SẢN LƯỢNG (TẤN):                 <input type="text" id="B6" > <br><br> -->
+
+<p>CHI PHÍ THU HOẠCH VÀ PHÂN LOẠI: <span style = "color: red;" id="B4"></span></p>
+<p>CHI PHÍ VẬN CHUYỂN:             <span style = "color: red;" id="B5"></span></p>
+<p>TỔNG SẢN LƯỢNG (TẤN):           <span style = "color: red;" id="B6"></span></p>
 
 
  
 
 GIÁ ĐI CHỢ / KG	<br>
-LỚN:                             <input type="number" id="xxxxxxx" onkeyup="myFunction()"> <br><br>
-TRUNG:                             <input type="number" id="xxxxxxx" onkeyup="myFunction()"> <br><br>
-BI:                             <input type="number" id="xxxxxxx" onkeyup="myFunction()"> <br><br>
+LỚN:                                  <input type="number" id="B9" onkeyup="myFunction()"> <br><br>
+TRUNG:                                <input type="number" id="B10" onkeyup="myFunction()"> <br><br>
+BI:                                   <input type="number" id="B11" onkeyup="myFunction()"> <br><br>
 <br><br>
 
 
@@ -26,17 +30,39 @@ BI:                             <input type="number" id="xxxxxxx" onkeyup="myFun
 GIÁ THU MUA / KG	<br>
 
 
-LỚN:                              <input type="number" id="xxxxxxx" onkeyup="myFunction()"> <br><br>
-TRUNG:                            <input type="number" id="xxxxxxx" onkeyup="myFunction()"> <br><br>
-BI:                               <input type="number" id="xxxxxxx" onkeyup="myFunction()"> <br><br>
+LỚN:                                  <input type="number" id="B15" onkeyup="myFunction()"> <br><br>
+TRUNG:                                <input type="number" id="B16" onkeyup="myFunction()"> <br><br>
+BI:                                   <input type="number" id="B17" onkeyup="myFunction()"> <br><br>
 
 <!-- <p>c: <span id="c"></span></p> -->
 
 <script>
 
 function myFunction() {
+
 var B2 = parseInt(document.getElementById("B2").value);
 var B3 = parseInt(document.getElementById("B3").value);
+var B9 = parseInt(document.getElementById("B9").value);
+var B10 = parseInt(document.getElementById("B10").value);
+var B11 = parseInt(document.getElementById("B11").value);
+var B15 = parseInt(document.getElementById("B15").value);
+var B16 = parseInt(document.getElementById("B16").value);
+var B17 = parseInt(document.getElementById("B17").value);
+
+// CHI PHÍ THU HOẠCH VÀ PHÂN LOẠI: 
+var B4 = B3 * 1800000;
+
+
+
+// TỔNG SẢN LƯỢNG (TẤN): 
+var B6 = B2 * B3;
+
+// CHI PHÍ VẬN CHUYỂN: 
+var B5 = ( B6 / 2 ) * 300000;
+
+document.getElementById("B4").innerHTML = B4;
+document.getElementById("B5").innerHTML = B5;
+document.getElementById("B6").innerHTML = B6;
 
 
 
