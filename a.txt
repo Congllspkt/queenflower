@@ -1,1 +1,26 @@
-aaaaaaaaaaa
+THẨM ĐỊNH SẢN LƯỢNG TRÊN 1 SÀO (TẤN): 
+nhập B2
+
+DIỆN TÍCH: 
+nhập B3
+
+CHI PHÍ THU HOẠCH VÀ PHÂN LOẠI: 
+B4=B3*1800000
+
+
+CHI PHÍ VẬN CHUYỂN: 
+B5=(B6/2)*300000
+
+TỔNG SẢN LƯỢNG (TẤN): 
+B6=B2*B3
+
+GIÁ ĐI CHỢ / KG	
+LỚN: 
+TRUNG:  
+BI: 
+
+GIÁ THU MUA / KG	
+LỚN: 
+TRUNG:  
+BI: 
+
