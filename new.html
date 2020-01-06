@@ -12,9 +12,6 @@ td, th {
   border: 1px solid #dddddd;
   text-align: center;
 }
-
-tr:nth-child(even) {
-  background-color: #dddddd;
 }
 </style>
 </head>
@@ -82,36 +79,19 @@ BI:                                   <input type="number" id="B17" onkeyup="myF
 
   </tr>
   
-  <!-- <tr> -->
-    <!-- <td>Alfreds Futterkiste</td> -->
-    <!-- <td>Maria Anders</td> -->
-    <!-- <td>Germany</td> -->
-  <!-- </tr> -->
-  <!-- <tr> -->
-    <!-- <td>Centro comercial Moctezuma</td> -->
-    <!-- <td>Francisco Chang</td> -->
-    <!-- <td>Mexico</td> -->
-  <!-- </tr> -->
-  <!-- <tr> -->
-    <!-- <td>Ernst Handel</td> -->
-    <!-- <td>Roland Mendel</td> -->
-    <!-- <td>Austria</td> -->
-  <!-- </tr> -->
-  <!-- <tr> -->
-    <!-- <td>Island Trading</td> -->
-    <!-- <td>Helen Bennett</td> -->
-    <!-- <td>UK</td> -->
-  <!-- </tr> -->
-  <!-- <tr> -->
-    <!-- <td>Laughing Bacchus Winecellars</td> -->
-    <!-- <td>Yoshi Tannamuri</td> -->
-    <!-- <td>Canada</td> -->
-  <!-- </tr> -->
-  <!-- <tr> -->
-    <!-- <td>Magazzini Alimentari Riuniti</td> -->
-    <!-- <td>Giovanni Rovelli</td> -->
-    <!-- <td>Italy</td> -->
-  <!-- </tr> -->
+  <tr>
+    <td id = "z001"></td>
+    <td id = "z002"></td>
+    <td id = "z003"></td>
+    <td id = "z004"></td>
+    <td id = "z005"></td>
+    <td id = "z006"></td>
+    <td id = "z007"></td>
+    <td id = "z008"></td>
+    <td id = "z009"></td>
+    <td id = "z010"></td>
+    <td id = "z011"></td>
+  </tr>
 </table>
 
 
@@ -144,6 +124,51 @@ var B5 = ( B6 / 2 ) * 300000;
 document.getElementById("B4").innerHTML = B4;
 document.getElementById("B5").innerHTML = B5;
 document.getElementById("B6").innerHTML = B6;
+
+var arrTyLeLon               = [9,8,8,7,7,6,6,6,5,5,5,4,4,4,4];
+var arrTyLeTrungBinh         = [1,2,1,3,2,4,3,2,5,4,3,6,5,4,3];
+var arrTyLeBi                = [0,0,1,0,1,0,1,2,0,1,2,0,1,2,3];
+
+var arrSoLuongLon            = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var arrSoLuongTrungBinh      = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var arrSoLuongBi             = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var arrSoLuongTong           = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+var arrGiaTBMua1Kg           = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var arrGiaTBBan1Kg           = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var arrTongChiPhiPhatSinh    = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var arrLoiNhuan1Kg           = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var arrTongLoiNhuan          = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var arrLoiKhuyen             = ['','','','','','','','','','','','','','',''];
+
+for (var i = 0; i< 15; i++ ) {
+	
+	// số lượng Tấn
+	arrSoLuongLon[i]         = B6 * 0.1 * arrTyLeLon[i];
+	arrSoLuongTrungBinh[i]   = B6 * 0.1 * arrTyLeTrungBinh[i];
+	arrSoLuongBi[i]          = B6 * 0.1 * arrTyLeBi[i];
+	arrSoLuongTong[i]        = arrSoLuongLon[i] + arrSoLuongTrungBinh[i] + arrSoLuongBi[i];
+	
+	arrGiaTBMua1Kg[i]        = (B15 * arrSoLuongLon[i] + B16 * arrSoLuongTrungBinh[i] + B17 * arrSoLuongBi[i] ) / arrSoLuongTong[i];
+	arrGiaTBBan1Kg[i]        = (B9 * arrSoLuongLon[i] +  B10 * arrSoLuongTrungBinh[i] + B11 * arrSoLuongBi[i] ) / arrSoLuongTong[i];
+	arrTongChiPhiPhatSinh[i] = B4 + B5;
+	arrLoiNhuan1Kg[i]        = (((arrGiaTBBan1Kg[i]-arrGiaTBMua1Kg[i])*arrSoLuongTong[i]*1000)-arrTongChiPhiPhatSinh[i])/(arrSoLuongTong[i]*1000);
+	arrTongLoiNhuan[i]       =  arrLoiNhuan1Kg[i] * arrSoLuongTong[i] * 1000;
+	arrLoiKhuyen[i]          = (( arrTongLoiNhuan[i] / B3 ) >= 2000000) ? "NÊN" : "KHÔNG NÊN";	
+}
+
+document.getElementById("z001").innerHTML = "" + arrTyLeLon        [0] + arrTyLeTrungBinh[0] + arrTyLeBi[0];
+document.getElementById("z002").innerHTML = arrSoLuongLon          [0];
+document.getElementById("z003").innerHTML = arrSoLuongTrungBinh    [0];
+document.getElementById("z004").innerHTML = arrSoLuongBi           [0];
+document.getElementById("z005").innerHTML = arrSoLuongTong         [0];
+document.getElementById("z006").innerHTML = arrGiaTBMua1Kg         [0];
+document.getElementById("z007").innerHTML = arrGiaTBBan1Kg         [0];
+document.getElementById("z008").innerHTML = arrTongChiPhiPhatSinh  [0];
+document.getElementById("z009").innerHTML = arrLoiNhuan1Kg         [0];
+document.getElementById("z010").innerHTML = arrTongLoiNhuan        [0];
+document.getElementById("z011").innerHTML = arrLoiKhuyen           [0];
+
 
 
 
