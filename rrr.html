@@ -6,10 +6,10 @@
         table, th, td {
           border: 1px solid black;
           border-collapse: collapse;
-          height: 60px;
-          width: 50px;
+          height: 95px;
+          width: 80px;
           table-layout: fixed;
-          font-size:40px;
+          font-size:50px;
           font-weight: bold;
           text-align: center;
         }
@@ -522,7 +522,7 @@
     if (table != null) {
         for (var i = 0; i < table.rows.length; i++) {
             for (var j = 0; j < table.rows[i].cells.length; j++)
-            table.rows[i].cells[j].ondblclick = function () {
+            table.rows[i].cells[j].onkeydown = function () {
                 dtableText(this);
             };
         }
