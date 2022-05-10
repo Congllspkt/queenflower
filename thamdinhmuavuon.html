@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THẨM ĐỊNH MUA VƯỜN</h1>
+    Số thiên (thiên): <input style="background-color: yellow" type="number" id="B3" onkeyup="myFunction()" value="10">
+    <br>
+    Số cây hao hụt (cây): <input style="background-color: yellow" type="number" id="B4" onkeyup="myFunction()"
+        value="500"> <br>
+    <p>Số cây còn lại thực tế (cây): <span style="color: red;" id="B5"></span></p>
+
+    Phỏng đoán năng suất cây (KG): <input style="background-color: yellow" type="number" inputmode="decimal" id="B6"
+        onkeyup="myFunction()" value="1.5"> <br>
+    Giá cà lớn hiện tại (VNĐ): <input style="background-color: yellow" type="number" id="B7" onkeyup="myFunction()"
+        value="6000"> <br>
+    Giá cà trung hiện tại (VNĐ): <input style="background-color: yellow" type="number" id="B8" onkeyup="myFunction()"
+        value="4000"> <br>
+    Giá cà bi hiện tại (VNĐ): <input style="background-color: yellow" type="number" id="B9" onkeyup="myFunction()"
+        value="2000"> <br>
+    thời điểm mua (tuần): <input style="background-color: yellow" type="number" id="B10" onkeyup="myFunction()"
+        value="7"> <br>
+    <p>Chi phí đầu tư phân thuốc tới lúc hái (VNĐ): <span style="color: red;" id="B11"></span></p>
+    Chi phí đầu tư phân thuốc trong lúc hái (VNĐ): <input type="number" id="B12" onkeyup="myFunction()" value="0"> <br>
+
+    <p>Chi phí nhân công trong lúc hái (VNĐ): <span style="color: red;" id="B13"></span></p>
+
+
+    <br><br><br>
+
+    <h3>Bán ra</h3>
+    lớn (KG): <input style="background-color: yellow" type="number" id="G7" onkeyup="myFunction()" value="8000"> <br>
+    trung (KG): <input style="background-color: yellow" type="number" id="G8" onkeyup="myFunction()" value="6000"> <br>
+    bi (KG): <input style="background-color: yellow" type="number" id="G9" onkeyup="myFunction()" value="4000"> <br>
+
+
+
+
+    <table>
+        <tr>
+            <th>Tỷ Lệ</th>
+            <th colspan="4">Số Lượng</th>
+            <th colspan="4">Tiền bán cà</th>
+            <th colspan="8">Bán ra</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Lớn</th>
+            <th>Trung bình</th>
+            <th>Bi</th>
+            <th>Tổng</th>
+            <th>Lớn</th>
+            <th>Trung bình</th>
+            <th>Bi</th>
+            <th>Tổng</th>
+            <th>Tiền cà lớn</th>
+            <th>Tiền cà trung</th>
+            <th>Tiền cà bi</th>
+            <th>tổng tiền cây bán ra</th>
+            <th>Lãi/1cây</th>
+            <th>Tổng Lãi</th>
+            <th>Phí đầu tư khi mua</th>
+            <th>Lãi thực tế </th>
+        </tr>
+
+        <tr>
+            <td id="z001"></td>
+            <td id="z002"></td>
+            <td id="z003"></td>
+            <td id="z004"></td>
+            <td id="z005"></td>
+            <td id="z006"></td>
+            <td id="z007"></td>
+            <td id="z008"></td>
+            <td id="z009"></td>
+            <td id="z010"></td>
+            <td id="z011"></td>
+            <td id="z012"></td>
+            <td id="z013"></td>
+            <td id="z014"></td>
+            <td id="z015"></td>
+            <td id="z016"></td>
+            <td id="z017"></td>
+        </tr>
+
+        <tr>
+            <td id="z101"></td>
+            <td id="z102"></td>
+            <td id="z103"></td>
+            <td id="z104"></td>
+            <td id="z105"></td>
+            <td id="z106"></td>
+            <td id="z107"></td>
+            <td id="z108"></td>
+            <td id="z109"></td>
+            <td id="z110"></td>
+            <td id="z111"></td>
+            <td id="z112"></td>
+            <td id="z113"></td>
+            <td id="z114"></td>
+            <td id="z115"></td>
+            <td id="z116"></td>
+            <td id="z117"></td>
+        </tr>
+
+        <tr>
+            <td id="z201"></td>
+            <td id="z202"></td>
+            <td id="z203"></td>
+            <td id="z204"></td>
+            <td id="z205"></td>
+            <td id="z206"></td>
+            <td id="z207"></td>
+            <td id="z208"></td>
+            <td id="z209"></td>
+            <td id="z210"></td>
+            <td id="z211"></td>
+            <td id="z212"></td>
+            <td id="z213"></td>
+            <td id="z214"></td>
+            <td id="z215"></td>
+            <td id="z216"></td>
+            <td id="z217"></td>
+        </tr>
+
+        <tr>
+            <td id="z301"></td>
+            <td id="z302"></td>
+            <td id="z303"></td>
+            <td id="z304"></td>
+            <td id="z305"></td>
+            <td id="z306"></td>
+            <td id="z307"></td>
+            <td id="z308"></td>
+            <td id="z309"></td>
+            <td id="z310"></td>
+            <td id="z311"></td>
+            <td id="z312"></td>
+            <td id="z313"></td>
+            <td id="z314"></td>
+            <td id="z315"></td>
+            <td id="z316"></td>
+            <td id="z317"></td>
+        </tr>
+
+        <tr>
+            <td id="z401"></td>
+            <td id="z402"></td>
+            <td id="z403"></td>
+            <td id="z404"></td>
+            <td id="z405"></td>
+            <td id="z406"></td>
+            <td id="z407"></td>
+            <td id="z408"></td>
+            <td id="z409"></td>
+            <td id="z410"></td>
+            <td id="z411"></td>
+            <td id="z412"></td>
+            <td id="z413"></td>
+            <td id="z414"></td>
+            <td id="z415"></td>
+            <td id="z416"></td>
+            <td id="z417"></td>
+        </tr>
+
+        <tr>
+            <td id="z501"></td>
+            <td id="z502"></td>
+            <td id="z503"></td>
+            <td id="z504"></td>
+            <td id="z505"></td>
+            <td id="z506"></td>
+            <td id="z507"></td>
+            <td id="z508"></td>
+            <td id="z509"></td>
+            <td id="z510"></td>
+            <td id="z511"></td>
+            <td id="z512"></td>
+            <td id="z513"></td>
+            <td id="z514"></td>
+            <td id="z515"></td>
+            <td id="z516"></td>
+            <td id="z517"></td>
+        </tr>
+
+        <tr>
+            <td id="z601"></td>
+            <td id="z602"></td>
+            <td id="z603"></td>
+            <td id="z604"></td>
+            <td id="z605"></td>
+            <td id="z606"></td>
+            <td id="z607"></td>
+            <td id="z608"></td>
+            <td id="z609"></td>
+            <td id="z610"></td>
+            <td id="z611"></td>
+            <td id="z612"></td>
+            <td id="z613"></td>
+            <td id="z614"></td>
+            <td id="z615"></td>
+            <td id="z616"></td>
+            <td id="z617"></td>
+        </tr>
+    </table>
+
+
+
+
+    <script>
+
+        function myFunction() {
+
+            var B3 = parseInt(document.getElementById("B3").value);
+            var B4 = parseInt(document.getElementById("B4").value);
+            var B6 = parseFloat(document.getElementById("B6").value);
+            var B7 = parseInt(document.getElementById("B7").value);
+            var B8 = parseInt(document.getElementById("B8").value);
+            var B9 = parseInt(document.getElementById("B9").value);
+            var B10 = parseInt(document.getElementById("B10").value);
+            var B12 = parseInt(document.getElementById("B12").value);
+
+            var G7 = parseInt(document.getElementById("G7").value);
+            var G8 = parseInt(document.getElementById("G8").value);
+            var G9 = parseInt(document.getElementById("G9").value);
+
+            var B5 = (B3 * 1000) - B4;
+            var B11 = 500 * (10 - B10) * B5;
+            var B13 = B6 * B5 * 10000.0 / 28
+
+            document.getElementById("B5").innerHTML = formatNumber(B5);
+            document.getElementById("B11").innerHTML = formatNumber(B11);
+            document.getElementById("B13").innerHTML = formatNumber(Math.round(B13));
+
+            var arrTyLeLon = [5, 5, 6, 6, 6, 7, 7];
+            var arrTyLeTrungBinh = [4, 3, 4, 3, 2, 3, 2];
+            var arrTyLeBi = [1, 2, 0, 1, 2, 0, 1];
+
+            for (var i = 0; i < 7; i++) {
+                document.getElementById("z" + i + "01").innerHTML = "" + arrTyLeLon[i] + arrTyLeTrungBinh[i] + arrTyLeBi[i];
+                var B17 = B6 * arrTyLeLon[i] / 10;
+                var B18 = B6 * arrTyLeTrungBinh[i] / 10;
+                var B19 = B6 * arrTyLeBi[i] / 10;
+                var B20 = B17 + B18 + B19;
+
+                var B22 = B17 * B7;
+                var B23 = B18 * B8;
+                var B24 = B19 * B9;
+                var B25 = B22 + B23 + B24
+
+                var B29 = B17 * G7;
+                var B30 = B18 * G8;
+                var B31 = B19 * G9;
+                var B32 = B29 + B30 + B31;
+                var B33 = B32 - B25;
+
+                document.getElementById("z" + i + "02").innerHTML = B17;
+                document.getElementById("z" + i + "03").innerHTML = B18;
+                document.getElementById("z" + i + "04").innerHTML = B19;
+                document.getElementById("z" + i + "05").innerHTML = B20;
+
+                document.getElementById("z" + i + "06").innerHTML = formatNumber(B22);
+                document.getElementById("z" + i + "07").innerHTML = formatNumber(B23);
+                document.getElementById("z" + i + "08").innerHTML = formatNumber(B24);
+                document.getElementById("z" + i + "09").innerHTML = formatNumber(B25);
+
+                document.getElementById("z" + i + "10").innerHTML = formatNumber(B29);
+                document.getElementById("z" + i + "11").innerHTML = formatNumber(B30);
+                document.getElementById("z" + i + "12").innerHTML = formatNumber(B31);
+                document.getElementById("z" + i + "13").innerHTML = formatNumber(B32);
+                document.getElementById("z" + i + "14").innerHTML = formatNumber(B33);
+
+                var B35 = B33 * B5;
+                var B36 = Math.round(B13 + B12 + B11);
+                var B37 = Math.round(B35 - B36);
+                document.getElementById("z" + i + "15").innerHTML = formatNumber(B35);
+                document.getElementById("z" + i + "16").innerHTML = formatNumber(B36);
+                document.getElementById("z" + i + "17").innerHTML = formatNumber(B37);
+            }
+
+        }
+
+        function formatNumber(num) {
+            if (num == 0) return 0;
+            return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+        }
+    </script>
+
+</body>
+
+</html>
