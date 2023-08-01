@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C.Lớn       C.Trung      C.Bi</title>
+    <style>
+        /* Style for the enabled input fields */
+        .fillinput {
+            background-color: lawngreen;
+            border: 1px solid black;
+            width : 50px;
+            height : 25px;
+        }
+        
+        .disinput {
+            width : 80px;
+            height : 25px;
+            color: red
+        }
+        
+         .result {
+            font-size: 24px; /* You can adjust the font size as needed */
+            color: red; /* You can change the color to your preference */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C.Lớn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C.Trung&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C.Bi</h3>
+    <form id="sumForm">
+        <label for="num1">- Giá</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class = "fillinput" type="number" id="b4" name="b4" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class = "fillinput" type="number" id="c4" name="c4" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class = "fillinput" type="number" id="d4" name="d4" required>
+       
+       
+       
+       
+       
+       
+       
+       
+       <br><br>
+        <label for="num2">- Phần Trăm Dự Đoán (%)</label>&nbsp;
+        <input class = "fillinput" type="number" id="b5" name="b5" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class = "fillinput" type="number" id="c5" name="c5" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label  class = "disinput" id="d5" name="d5"></label>
+        <br><br>
+        
+        
+         <label for="num2">Lợi nhuận mong đợi / 1kg</label>
+        <input class = "fillinput" type="number" id="b8" name="b8" required>
+        <br><br>
+        
+        
+        
+        <input type="submit" value="Tinh">
+    </form>
+    <label>- Giá thu mua:</label> <label class= "result" id="b9"></label>
+
+
+    <script>
+        document.getElementById('sumForm').onsubmit = function(event) {
+            event.preventDefault();
+            const b4 = parseFloat(document.getElementById('b4').value);
+            const c4 = parseFloat(document.getElementById('c4').value);
+            const d4 = parseFloat(document.getElementById('d4').value);
+            
+            const b5 = parseFloat(document.getElementById('b5').value);
+            const c5 = parseFloat(document.getElementById('c5').value);
+            
+
+            
+            const b8 = parseFloat(document.getElementById('b8').value);
+            
+            var d5 = 100 - b5 - c5;
+            
+ 
+            
+            var b9 = b4 * b5 / 100  + c4 * c5 / 100 +  d4 * d5 / 100 - b8;
+   
+            
+            
+    
+            document.getElementById('d5').innerText = `${d5}`;
+            
+            document.getElementById('b9').innerText = `${b9}`;
+   
+        };
+    </script>
+</body>
+</html>
