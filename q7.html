@@ -195,8 +195,10 @@
             <p>+ B1: nhập đầy dủ thông tin về khu vực, phường, diện tích, giá, tầng, số PN, ngang, dài</p>
             <p>+ B2: Chọn 1 vài tiêu chí như HXH, an ninh,.... và các khu vực lân cận</p>
             <p>+ B3: nhập thông tin liên hệ, ví dụ: "SDT/ZALO 01233.456.7489", sau khi tạo tin 1 lần, thông tin này sẽ lưu vào máy, lần sau mỡ web không cần nhập lại</p>
-            <p>+ B4: ấn vào "lấy tin" dể tạo tin, ấn nút này lần nữa sẽ ra nhiều tin tương tự cùng nội dung</p>
+            <p>+ B4: ấn vào "lấy tin" dể tạo tin, ấn nút này lần nữa sẽ ra nhiều tin tương tự cùng nội dung, có thể chỉnh sửa thêm theo ý muốn</p>
             <p>+ B5: khi kiểm tra tin thấy ok, ấn vào "coppy tin" -> lên facebook và dán vào</p>
+            <p>xong</p>
+
         
         </div>
         <script>
@@ -231,7 +233,7 @@
                         checkedLabels.push(label.textContent);
                     }
                 }
-                khuvucxungquanh = checkedLabels.join(" ,");
+                khuvucxungquanh = checkedLabels.join(", ");
 
                 var phuong = $("#phuong option:selected").text();
                 var dientich = $("#dientich").val();
@@ -395,28 +397,9 @@
                     tin += shr;
                 }
 
-
-
-                var listLh = [
-                    "LH: 0963 569 435",
-                    "Công: 0963 569 435",
-                    "SĐT: 0963 569 435",
-                    "SĐT/ZALO: 0963 569 435",
-                    "Liên Hệ: 0963 569 435",
-                    "call/Zalo: 0963 569 435",
-                    "LH: 0963.569.435",
-                    "Công: 0963.569.435",
-                    "SĐT: 0963.569.435",
-                    "SĐT/ZALO: 0963.569.435",
-                    "Liên Hệ: 0963.569.435",
-                    "call/Zalo: 0963.569.435",
-                    "☎️☎️ zALO 0963.569.435"
-                ];
-                randomNumber = Math.floor(Math.random() * listLh.length);
-                var lh = listLh[randomNumber];
                 tin += "\n";
                 tin += "\n";
-                tin += lh;
+                tin += $('#thongtinlienhe').val();
 
                 tin += "\n";
                 tin += "\n";
