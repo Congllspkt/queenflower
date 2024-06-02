@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        @media (max-width: 576px) {
+            .custom-control-label {
+                padding-left: 5px;
+            }
+        }
+
+        .short-input {
+            width: 150px;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Increase radio button size */
+        .radio-container input[type="radio"] {
+            transform: scale(1.5);
+            margin-right: 10px;
+        }
+
+        .label-select-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .label-select-container label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .input-container {
+            display: flex;
+        }
+
+        .input-container .form-control {
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.5);
+            /* Increase the checkbox size */
+            margin-right: 10px;
+            /* Add some spacing between the checkbox and label */
+        }
+        
+        .bigger-button {
+  font-size: 18px; /* Increase the font size */
+  padding: 10px 20px; /* Increase the padding */
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <br><br>
+            <label>Khu vực q7</label>
+            <br><br>
+            <label>Chọn khu vực bán</label>
+            <div class="label-select-container">
+                <select class="form-control" id="khuvuc" name="dropdownO">
+                    <option value="kv1">GẦN LOTTEMART</option>
+                    <option value="kv2">NGAY CHỢ TÂN QUY</option>
+                    <option value="kv3">NGAY CHỢ TÂN MỸ</option>
+                    <option value="kv4">LÂM VĂN BỀN</option>
+                    <option value="kv5">NGUYỄN THỊ THẬP</option>
+                    <option value="kv6">HUỲNH TẤN PHÁT</option>
+                    <option value="kv7">TÂN MỸ</option>
+                    <option value="kv8">LÊ VĂN LƯƠNG</option>
+                    <option value="kv9">NGUYỄN VĂN QUỲ</option>
+                    <option value="kv10">BÙI VĂN BA</option>
+                    <option value="kv11">KDC NAM LONG</option>
+                    <option value="kv12">NGUYỄN HỮU THỌ</option>
+                </select>
+            </div>
+            <br>
+            <label>Chọn phường</label>
+            <div class="label-select-container">
+                <select class="form-control" id="phuong" name="dropdownO">
+                    <option value="phuong1">TÂN KIỂNG</option>
+                    <option value="phuong2">TÂN QUY</option>
+                    <option value="phuong3">TÂN HƯNG</option>
+                    <option value="phuong4">TÂN PHONG</option>
+                    <option value="phuong5">TÂN PHÚ</option>
+                    <option value="phuong6">TÂN THUẬN ĐÔNG</option>
+                    <option value="phuong7">TÂN THUẬN TÂY</option>
+                    <option value="phuong8">BÌNH THUẬN</option>
+                    <option value="phuong9">PHÚ MỸ</option>
+                    <option value="phuong10">PHÚ THUẬN</option>
+                </select>
+            </div>
+
+            <br>
+            <label>Thông tin căn nhà</label>
+            <div class="label-select-container">
+                <div class="input-container">
+                    <input type="number" class="form-control short-input" id="dientich" placeholder="Diện tích (m2)">
+                    <input type="number" class="form-control short-input" id="gia" placeholder="Giá (tỷ)">
+                    <input type="number" class="form-control short-input" id="tang" placeholder="tầng">
+                    <input type="number" class="form-control short-input" id="pn" placeholder="PN">
+                </div>
+            </div>
+            <div class="label-select-container">
+                <div class="input-container">
+                    <input type="number" class="form-control short-input" id="ngang" placeholder="ngang">
+                    <input type="number" class="form-control short-input" id="dai" placeholder="dài">
+                </div>
+            </div>
+            <br>
+            <label>Tiêu chí căn nhà</label><br>
+            <input type="checkbox" id="hxh" name="checkbox3"><label for="checkbox3">HXH</label><br>
+            <input type="checkbox" id="shr" name="checkbox3"><label for="checkbox3">SHR</label><br>
+            <input type="checkbox" id="ntd" name="checkbox3"><label for="checkbox3">Nội thất đẹp</label><br>
+            <input type="checkbox" id="sv" name="checkbox3"><label for="checkbox3">Sân vườn</label><br>
+            <input type="checkbox" id="btct" name="checkbox3"><label for="checkbox3">BTCT</label><br>
+            <input type="checkbox" id="an" name="checkbox3"><label for="checkbox3">An ninh</label><br>
+            <br>
+
+            <label>khu vực xung quanh</label>
+            <div class="row">
+                <div class="column">
+                    <div class="radio-container">
+                        <input type="checkbox" id="64564356" name="khuvucxungquanh"><label for="64564356">Vincom</label><br>
+                        <input type="checkbox" id="634576456" name="khuvucxungquanh"><label for="634576456">Lotte  mart</label><br>
+                        <input type="checkbox" id="7567" name="khuvucxungquanh"><label for="7567">Crescent Mall </label><br>
+                        <input type="checkbox" id="64536456" name="khuvucxungquanh"><label for="64536456">SC VivoCity</label><br>
+                        <input type="checkbox" id="63456546" name="khuvucxungquanh"><label for="63456546">BigC </label><br>
+                        <input type="checkbox" id="checkbox2" name="khuvucxungquanh"><label for="checkbox2">bách hóa xanh</label><br>
+                        <input type="checkbox" id="checkbox3" name="khuvucxungquanh"><label for="checkbox3">chợ</label><br>
+                        <input type="checkbox" id="checkbox4" name="khuvucxungquanh"><label for="checkbox4">trường học</label><br>
+                        <input type="checkbox" id="checkbox5" name="khuvucxungquanh"><label for="checkbox5">bệnh viện</label><br>
+
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="radio-container">
+                        <input type="checkbox" id="checkbox6" name="khuvucxungquanh"><label for="checkbox6">trường tiểu học</label><br>
+                        <input type="checkbox" id="checkbox7" name="khuvucxungquanh"><label for="checkbox7">trường thcs</label><br>
+                        <input type="checkbox" id="checkbox8" name="khuvucxungquanh"><label for="checkbox8">trường thpt</label><br>
+                        <input type="checkbox" id="checkbox9" name="khuvucxungquanh"><label for="checkbox9">Đại học RMIT</label><br>
+                        <input type="checkbox" id="checkbox10" name="khuvucxungquanh"><label for="checkbox10">Đại học Tôn Đức Thắng</label><br>
+                        <input type="checkbox" id="checkbox11" name="khuvucxungquanh"><label for="checkbox11">chợ Tân Quy</label><br>
+                        <input type="checkbox" id="checkbox12" name="khuvucxungquanh"><label for="checkbox12">Chợ Tân  Mỹ</label><br>
+                        <input type="checkbox" id="checkbox13" name="khuvucxungquanh"> <label for="checkbox13">Chợ Tân Kiểng</label><br>
+                        <input type="checkbox" id="checkbox14" name="khuvucxungquanh"><label for="checkbox14">Chợ Tân Kiểng</label><br>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="radio-container">
+                        <input type="checkbox" id="hfg" name="khuvucxungquanh"><label for="hfg">Lê Văn Lương</label><br>
+                        <input type="checkbox" id="checkreterbox7" name="khuvucxungquanh"><label for="checkreterbox7">Lâm Văn Bền</label><br>
+                        <input type="checkbox" id="chedsfgckbox8" name="khuvucxungquanh"><label for="chedsfgckbox8">Nguyễn Thị Thập</label><br>
+                        <input type="checkbox" id="chegsfdckbox9" name="khuvucxungquanh"><label for="chegsfdckbox9">Nguyễn Văn Linh</label><br>
+                        <input type="checkbox" id="chegsdfckbox10" name="khuvucxungquanh"><label for="chegsdfckbox10">Huỳnh Tấn Phát</label><br>
+                        <input type="checkbox" id="checkbherox11" name="khuvucxungquanh"><label for="checkbherox11">Nguyễn Văn Quỳ</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <label>Thông tin liên hệ</label>
+            <input type="text" class="form-control" id="thongtinlienhe" placeholder="thông tin liên hệ">
+            <br>
+            <button class="bigger-button" id="laytin">lấy tin</button>
+            <button class="bigger-button" id="copyButton">Copy tin</button>
+            <br><br>
+            <textarea id="myTextarea" style="width:100%;height: 300px;"></textarea>
+            <br><br>
+            
+            <p>20s soạn được 1 tin đăng</p>
+            <p>Cách sử dụng</p>
+            <p>+ B1: nhập đầy dủ thông tin về khu vực, phường, diện tích, giá, tầng, số PN, ngang, dài</p>
+            <p>+ B2: Chọn 1 vài tiêu chí như HXH, an ninh,.... và các khu vực lân cận</p>
+            <p>+ B3: nhập thông tin liên hệ, ví dụ: "SDT/ZALO 01233.456.7489", sau khi tạo tin 1 lần, thông tin này sẽ lưu vào máy, lần sau mỡ web không cần nhập lại</p>
+            <p>+ B4: ấn vào "lấy tin" dể tạo tin, ấn nút này lần nữa sẽ ra nhiều tin tương tự cùng nội dung</p>
+            <p>+ B5: khi kiểm tra tin thấy ok, ấn vào "coppy tin" -> lên facebook và dán vào</p>
+        
+        </div>
+        <script>
+            $('#thongtinlienhe').val(localStorage.getItem('thong_tin_lien_he'));
+
+
+
+            $("#copyButton").click(function () {
+                var textToCopy = $("#myTextarea").val();
+                var tempTextarea = $("<textarea>");
+                tempTextarea.val(textToCopy);
+                $("body").append(tempTextarea);
+                tempTextarea.select();
+                document.execCommand("copy");
+                tempTextarea.remove();
+            });
+
+            $("#laytin").click(function () {
+                localStorage.setItem('thong_tin_lien_he', $('#thongtinlienhe').val());
+                var loainha = $("#dropdown option:selected").text();
+                var khuvuc = $("#khuvuc option:selected").text();
+                var khuvucxungquanh = $("input[name='khuvucxungquanh']:checked").next().text();
+
+                var checkboxes = document.getElementsByName('khuvucxungquanh');
+                var checkedLabels = [];
+
+                for (var i = 0; i < checkboxes.length; i++) {
+                    var checkbox = checkboxes[i];
+
+                    if (checkbox.checked) {
+                        var label = checkbox.nextElementSibling;
+                        checkedLabels.push(label.textContent);
+                    }
+                }
+                khuvucxungquanh = checkedLabels.join(" ,");
+
+                var phuong = $("#phuong option:selected").text();
+                var dientich = $("#dientich").val();
+                var gia = $("#gia").val();
+                var ngang = $("#ngang").val();
+                var dai = $("#dai").val();
+                var tang = $("#tang").val();
+                var pn = $("#pn").val();
+
+                var hxh = '';
+                if ($("#hxh").is(":checked")) {
+                    hxh = 'hxh';
+                }
+
+                var shr = '';
+                if ($("#shr").is(":checked")) {
+                    shr = 'shr';
+                }
+
+                var ntd = '';
+                if ($("#ntd").is(":checked")) {
+                    ntd = 'ntd';
+                }
+
+                var sv = '';
+                if ($("#sv").is(":checked")) {
+                    sv = 'sv';
+                }
+
+                var bc = '';
+                if ($("#bc").is(":checked")) {
+                    bc = 'bc';
+                }
+
+                var btct = '';
+                if ($("#btct").is(":checked")) {
+                    btct = 'btct';
+                }
+
+                var an = '';
+                if ($("#an").is(":checked")) {
+                    an = 'an';
+                }
+
+                var tin = '';
+                var randomNumber = 0;
+
+
+
+                var listtd = [
+                    "**#999gia_TỶ NHỈNH, 999dt_M2, 999tang_ TẦNG, 999kv_, 999p_, QUẬN 7, HCM"
+                    , "**NHÀ ĐẸP, 999gia_TỶ NHỈNH, 999dt_M2, 999tang_ TẦNG, 999kv_, 999p_, QUẬN 7, HCM"
+                    , "**NHÀ ĐẸP, 999gia_TỶ, 999dt_M2, 999tang_ TẦNG, 999kv_, 999p_, QUẬN 7, HCM"
+                    , "**TRUNG TÂM Q7, 999gia_TỶ, 999dt_M2, 999tang_ TẦNG, 999kv_, 999p_"
+                ]
+
+                randomNumber = Math.floor(Math.random() * listtd.length);
+                td = listtd[randomNumber];
+                td = td.replace("999gia_", gia);
+                td = td.replace("999dt_", dientich);
+                td = td.replace("999tang_", tang);
+                td = td.replace("999kv_", khuvuc);
+                td = td.replace("999p_", phuong);
+                tin += td;
+                tin += "\n";
+
+
+
+
+                var listdt = [
+                    "-- Diện tích: 999dt_m2 (999ngang_m x 999dai_m), 999tang_ tầng, 999pn_ PN."
+                    , "-- Diện tích: 999dt_m2 (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ PN."
+                    , "-- Kết cấu: 999dt_m2 (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ PN."
+                    , "-- Diện tích: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ PN."
+                    , "-- Kết cấu: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
+                    , "-- Kết cấu: 999ngang_m * 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
+                ]
+
+                randomNumber = Math.floor(Math.random() * listdt.length);
+                dt = listdt[randomNumber];
+                dt = dt.replace("999dt_", dientich);
+                dt = dt.replace("999ngang_", ngang);
+                dt = dt.replace("999dai_", dai);
+                dt = dt.replace("999tang_", tang);
+                dt = dt.replace("999pn_", pn);
+                tin += "\n";
+                tin += dt;
+
+
+
+                if (hxh) {
+                    var listhxh = [
+                        '-- Hẻm xe hoi tới nhà.',
+                        '-- Xe hơi tới cửa.',
+                        '-- Xe hơi đỗ cửa.',
+                        '-- Xe hơi đỗ trước cửa.'
+                    ];
+                    randomNumber = Math.floor(Math.random() * listhxh.length);
+                    hxh = listhxh[randomNumber];
+                    tin += "\n";
+                    tin += hxh;
+                }
+
+                if (ntd) {
+                    var listnt = [
+                        '-- Nội thất: toàn sản phẩm cao cấp, tặng full toàn bộ.',
+                        '-- Nội thất đẹp, cao cấp.',
+                        '-- Nội thất đẹp, chất lượng.',
+                        '-- Nội thất đầy đủ.',
+                        '-- Nội thất tuyệt đẹp, sang trọng.',
+                        '-- Tặng toàn bộ nội thất cao cấp',
+                        '-- Nội thất đẳng cấp, hiện đại.'
+                    ];
+                    randomNumber = Math.floor(Math.random() * listnt.length);
+                    ntd = listnt[randomNumber];
+                    tin += "\n";
+                    tin += ntd;
+                }
+
+                if (sv) {
+                    var listsv = [
+                        '-- Có sân để xe, trồng cây.',
+                        '-- Có sân để xe, trồng cây thoáng mát.',
+                        '-- Có sân để xe, trồng cây cực thoáng mát.',
+                        '-- Có sân thoáng mát để xe, trồng cây.',
+                    ];
+                    randomNumber = Math.floor(Math.random() * listsv.length);
+                    sv = listsv[randomNumber];
+                    tin += "\n";
+                    tin += sv;
+                }
+
+                if (an) {
+                    var listan = [
+                        '-- An ninh tốt, dân trí cao.',
+                        '-- An ninh tốt, xung quanh nhiều nhà cao tầng, dân trí cao.'
+                    ];
+                    randomNumber = Math.floor(Math.random() * listan.length);
+                    an = listan[randomNumber];
+                    tin += "\n";
+                    tin += an;
+                }
+
+                tin += "\n";
+                tin += "-- Gần " + khuvucxungquanh;
+
+                if (shr) {
+                    var listShr = [
+                        '-- Pháp lý: sổ hồng riêng, nhà vuông vức, công chứng ngay.',
+                        '-- Pháp lý: sổ hồng riêng, vuông vức, công chứng sang tên ngay.',
+                        '-- Pháp lý: sổ hồng chính chủ, sang tên công chứng ngay.',
+                        '-- Pháp lý: sổ hồng riêng đẹp, hoàn công đủ, công chứng ngay',
+                        '-- Pháp lý: sổ hồng riêng, xây đựng đúng giấy phép hoàn công đầy đủ.'
+                        ,'-- Pháp lý: SHR, hoàn công đầy đủ.'
+                        ,'-- Pháp lý: SHR, hoàn công đầy đủ'
+
+                    ];
+                    randomNumber = Math.floor(Math.random() * listShr.length);
+                    shr = listShr[randomNumber];
+                    tin += "\n";
+                    tin += shr;
+                }
+
+
+
+                var listLh = [
+                    "LH: 0963 569 435",
+                    "Công: 0963 569 435",
+                    "SĐT: 0963 569 435",
+                    "SĐT/ZALO: 0963 569 435",
+                    "Liên Hệ: 0963 569 435",
+                    "call/Zalo: 0963 569 435",
+                    "LH: 0963.569.435",
+                    "Công: 0963.569.435",
+                    "SĐT: 0963.569.435",
+                    "SĐT/ZALO: 0963.569.435",
+                    "Liên Hệ: 0963.569.435",
+                    "call/Zalo: 0963.569.435",
+                    "☎️☎️ zALO 0963.569.435"
+                ];
+                randomNumber = Math.floor(Math.random() * listLh.length);
+                var lh = listLh[randomNumber];
+                tin += "\n";
+                tin += "\n";
+                tin += lh;
+
+                tin += "\n";
+                tin += "\n";
+                tin += '#nhapho #bannhaquan7 #bdsq7 #bdshcm';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                var itd = ['', '👉', '🔥', '🏠', '📍', '****', '✨', '✨✨', '🌈', '🌈🌈', '💥', '🏡']
+                randomNumber = Math.floor(Math.random() * itd.length);
+                tin = tin.replace("**", itd[randomNumber]);
+
+                var ind = ['-', '👉', '+', '🍀', '✅', '•', '*', '. ']
+                randomNumber = Math.floor(Math.random() * ind.length);
+                tin = tin.replaceAll("--", ind[randomNumber]);
+
+
+
+
+
+
+                $("#myTextarea").val(tin);
+            });
+        </script>
+</body>
+
+</html>
