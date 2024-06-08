@@ -99,7 +99,7 @@
                     <input type="number" class="form-control short-input" id="dientich" placeholder="Diện tích (m2)">
                     <input type="number" class="form-control short-input" id="gia" placeholder="Giá (tỷ)">
                     <input type="number" class="form-control short-input" id="tang" placeholder="tầng">
-                    <input type="number" class="form-control short-input" id="pn" placeholder="PN">
+                    <input type="number" class="form-control short-input" id="pn" placeholder="Phòng ngủ">
                 </div>
             </div>
             <div class="label-select-container">
@@ -110,12 +110,15 @@
             </div>
             <br>
             <label>Tiêu chí căn nhà</label><br>
+            <input type="checkbox" id="mattien" name="fsdfdsf"><label for="fsdfdsf">Mặt tiền</label><br>
             <input type="checkbox" id="hxh" name="check5345box3"><label for="check5345box3">Hẻm xe hơi</label><br>
             <input type="checkbox" id="shr" name="checwetrtkbox3"><label for="checwetrtkbox3">Sổ hồng riêng</label><br>
             <input type="checkbox" id="ntd" name="checgdfkbox3"><label for="checgdfkbox3">Nội thất đẹp</label><br>
             <input type="checkbox" id="sv" name="check35345324box3"><label for="check35345324box3">Sân vườn</label><br>
             <input type="checkbox" id="btct" name="chebxcvckbox3"><label for="chebxcvckbox3">Bê tông cốt thép</label><br>
             <input type="checkbox" id="an" name="check4324324box3"><label for="check4324324box3">An ninh</label><br>
+            <input type="checkbox" id="trungtam" name="gdfg"><label for="gdfg">Gần quận 1, 4, 8, khu vực xung
+                quanh</label><br>
             <br>
 
             <label>khu vực xung quanh</label>
@@ -149,6 +152,17 @@
         </div>
         <script>
 
+
+
+
+
+
+
+
+
+
+
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             const columnData = [
                 [
                     "Vincom",
@@ -165,8 +179,10 @@
                     "Đại học RMIT",
                     "Đại học Tôn Đức Thắng",
                     "chợ Tân Quy",
-                    "Chợ Tân  Mỹ",
-                    "Chợ Tân Kiểng"
+                    "Chợ Tân  Mỹ"
+                    , "Chợ Tân Kiểng"
+                    , "Phú Mỹ Hưng"
+                    , "Khu Chế Xuất Tân Thuận"
                 ],
                 [
                     "Lê Văn Lương",
@@ -200,7 +216,7 @@
                 return html;
             }
 
-            // Append the generated HTML to a container element
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             const container = document.getElementById('container'); // Assuming there's a container element in your HTML
             container.innerHTML = generateRowHTML();
 
@@ -233,6 +249,9 @@
                 "KDC NAM LONG",
                 "NGAY CHỢ TÂN QUY",
                 "NGAY CHỢ TÂN MỸ"
+                , "GẦN PHÚ MỸ HƯNG"
+                , "GẦN KHU CHẾ XUẤT TÂN THUẬN"
+                , "GẦN QUẬN 1"
             ];
 
             options = options.sort();
@@ -243,6 +262,7 @@
                 selectElement.append($("<option>").attr("value", value).text(option));
             });
 
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             var options = [
                 "TÂN KIỂNG",
@@ -265,6 +285,7 @@
 
 
             $('#thongtinlienhe').val(localStorage.getItem('thong_tin_lien_he'));
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             $("#copyButton").click(function () {
                 var textToCopy = $("#myTextarea").val();
@@ -275,6 +296,7 @@
                 document.execCommand("copy");
                 tempTextarea.remove();
             });
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             $("#laytin").click(function () {
                 localStorage.setItem('thong_tin_lien_he', $('#thongtinlienhe').val());
@@ -310,11 +332,14 @@
                 var bc = $("#bc").is(":checked") ? 'bc' : '';
                 var btct = $("#btct").is(":checked") ? 'btct' : '';
                 var an = $("#an").is(":checked") ? 'an' : '';
+                var trungtam = $("#trungtam").is(":checked") ? 'trungtam' : '';
+                var mattien = $("#mattien").is(":checked") ? 'mattien' : '';
 
                 var tin = '';
                 var randomNumber = 0;
 
 
+                // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                 var listtd = [
                     "**#999gia_TỶ NHỈNH, 999dt_M2, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
@@ -322,6 +347,18 @@
                     , "**NHÀ ĐẸP, 999gia_TỶ, 999dt_M2, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
                     , "**TRUNG TÂM Q7, 999gia_TỶ, 999dt_M2, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_"
                 ]
+
+                if (mattien) {
+                    var listtd = [
+                        , "**#999gia_TỶ NHỈNH, 999dt_M2, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                        , "**NHÀ ĐẸP, 999gia_TỶ NHỈNH, 999dt_M2, 999tang_ TẦNG, MẶT TIỀN  999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                        , "**NHÀ ĐẸP, 999gia_TỶ, 999dt_M2, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                        , "**TRUNG TÂM Q7, 999gia_TỶ, 999dt_M2, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_"
+                    ]
+                }
+
+
+
 
                 randomNumber = Math.floor(Math.random() * listtd.length);
                 td = listtd[randomNumber];
@@ -335,6 +372,7 @@
 
 
 
+                // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                 var listdt = [
                     "-- Diện tích: 999dt_m2 (999ngang_m x 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
@@ -359,7 +397,7 @@
 
                 if (hxh) {
                     var listhxh = [
-                        '-- Hẻm xe hơi tới nhà.',
+                        '-- Xe hơi tới nhà.',
                         '-- Xe hơi tới cửa.',
                         '-- Xe hơi đỗ cửa.',
                         '-- Xe hơi đỗ trước cửa.'
@@ -372,7 +410,7 @@
 
                 if (ntd) {
                     var listnt = [
-                        '-- Nội thất: toàn sản phẩm cao cấp, tặng full toàn bộ.',
+                        '-- Nội thất: toàn sản phẩm cao cấp.',
                         '-- Nội thất đẹp, cao cấp.',
                         '-- Nội thất đẹp, chất lượng.',
                         '-- Nội thất đầy đủ.',
@@ -408,10 +446,28 @@
                     tin += "\n";
                     tin += an;
                 }
-
+                //------------------------------------------------------------------------------------------------------------------------------------------------------
                 tin += "\n";
                 tin += "-- Gần " + khuvucxungquanh;
 
+                //-------------------------------------------------------------------------------------------------------------------------------------------------------
+                trungtam
+                if (trungtam) {
+                    var listtrungtam = [
+                        '-- Thuận tiện di chuyển vào Q1 và các quận trung tâm, thành phố Thủ Đức.'
+                        , '-- Gần Q1 và các quận trung tâm, thành phố Thủ Đức.'
+                        , '-- Thuận tiện di chuyển vào Q1, Q4, Q8, thành phố Thủ Đức.'
+                        , '-- Thuận tiện di chuyển vào Q1, Q4, Q8.'
+                        , '-- Gần Q1, Q4, Q8.'
+                        , '-- Gần Q1, Q4, Q8, thành phố Thủ Đức.'
+                    ];
+                    randomNumber = Math.floor(Math.random() * listtrungtam.length);
+                    trungtam = listtrungtam[randomNumber];
+                    tin += "\n";
+                    tin += trungtam;
+                }
+
+                //---------------------------------------------------------------------------------------------------------------------------------------------------------
                 if (shr) {
                     var listShr = [
                         '-- Pháp lý: sổ hồng riêng, nhà vuông vức, công chứng ngay.',
@@ -440,21 +496,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-                var itd = ['', '👉', '🔥', '🏠', '📍', '****', '✨', '✨✨', '🌈', '🌈🌈', '💥', '🏡']
+                var itd = ['', '👉', '🔥', '🏠', '📍', '****', '✨', '✨✨', '🌈', '🌈🌈', '💥', '🏡', '❤️', '❤️❤️', '☀️']
                 randomNumber = Math.floor(Math.random() * itd.length);
                 tin = tin.replace("**", itd[randomNumber]);
 
-                var ind = ['-', '👉', '+', '🍀', '✅', '•', '*', '. ']
+                var ind = ['-', '👉', '+', '🍀', '✅', '•', '*', '. ', '🎉', '✔️', '⚡', '🔹️', '>']
                 randomNumber = Math.floor(Math.random() * ind.length);
                 tin = tin.replaceAll("--", ind[randomNumber]);
 
