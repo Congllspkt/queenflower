@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List of Inputs from Array of Objects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {  
+var inputsArray = []
+for (var i = 0; i < 100; i++) {
+  inputsArray.push({placeholder: 'Enter text '+i, id:'input_'+i });
+}  	
+		
+      
+
+      var list = $('#inputsList');
+      inputsArray.forEach(function(inputObj) {
+        var listItem = $('<li>');
+        var input = $('<input>').attr('type', 'text').attr('id', inputObj.id);
+        var input_lb = $('<input>').attr('type', 'text').attr('id', inputObj.id + "_lb");
+        var button = $('<button>').attr('id', inputObj.id + "dd").text('Copy');
+        listItem.append(input_lb, input, button);
+        list.append(listItem);
+		
+		$('#'+inputObj.id).val(localStorage.getItem(inputObj.id))
+		$('#'+inputObj.id+ "_lb").val(localStorage.getItem(inputObj.id+ "_lb"))
+		
+		$('#'+inputObj.id + "dd").click(function() {
+			var sourceText = $('#'+inputObj.id).val();
+			var tempInput = $('<input>');
+			$('body').append(tempInput);
+			tempInput.val(sourceText).select();
+			document.execCommand('copy');
+			tempInput.remove();
+			localStorage.setItem(inputObj.id, sourceText);
+			
+			
+			localStorage.setItem(inputObj.id+ "_lb", $('#'+inputObj.id+ "_lb").val());
+	  });
+		
+		
+		
+		
+      });
+    });
+  </script>
+</head>
+<body>
+  <ul id="inputsList">
+    <!-- Inputs will be dynamically generated here -->
+  </ul>
+</body>
+</html>
