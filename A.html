@@ -21,7 +21,7 @@
 
     <script>
         function startSimulation() {
-            let n = 1000;
+            let n = 10;
             const interval = setInterval(() => {
                 run();
                 n--;
@@ -34,7 +34,8 @@
             let mySlice = [];
             let resultSlice = [];
             let k = 0;
-            let n = 10;
+            
+            let n = 6;
 
             while (n > 0) {
                 const randomIndex = Math.floor(Math.random() * numbers.length);
@@ -71,7 +72,7 @@
                     }
                 }
             }
-            document.getElementById('output').innerText += `${resultSlice.length + mySlice.length} `;
+            document.getElementById('output').innerText += `${resultSlice.length + mySlice.length} ,`;
         }
 
         function removeNumber(slice, number) {
