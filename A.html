@@ -52,13 +52,13 @@
             n--;
 
             if (n === 0) {
-                const countMap = mySlice.reduce((map, value) => {
+                var countMap = mySlice.reduce((map, value) => {
                     map[value] = (map[value] || 0) + 1;
                     return map;
                 }, {});
 
                 for (const value in countMap) {
-                    const count = countMap[value];
+                    var count = countMap[value];
                     if (parseInt(value) === k) {
                         for (let i = 0; i < count; i++) {
                             resultSlice.push(k);
