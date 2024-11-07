@@ -97,7 +97,7 @@
             <div class="label-select-container">
                 <div class="input-container">
                     <input type="number" class="form-control short-input" id="dientich" placeholder="Diện tích (M)">
-                    <input type="number" class="form-control short-input" id="gia" placeholder="Giá (tỏi)">
+                    <input type="number" class="form-control short-input" id="gia" placeholder="Giá (tỷ)">
                     <input type="number" class="form-control short-input" id="tang" placeholder="tầng">
                     <input type="number" class="form-control short-input" id="pn" placeholder="Phòng ngủ">
                 </div>
@@ -345,18 +345,18 @@
                 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                 var listtd = [
-                    "**#999gia_tỏi NHỈNH, 999dt_M, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
-                    , "** 999gia_tỏi NHỈNH, 999dt_M, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
-                    , "** 999gia_tỏi, 999dt_M, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
-                    , "**TRUNG TÂM Q7, 999gia_tỏi, 999dt_M, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_"
+                    "**#999gia_tỷ , 999dt_m2, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                    , "** 999gia_tỷ , 999dt_m2, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                    , "** 999gia_tỷ, 999dt_m2, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                    , "**TT Q7, 999gia_tỷ, 999dt_m2, 999tang_ TẦNG, 999kv_, PHƯỜNG 999p_"
                 ]
 
                 if (mattien) {
                     var listtd = [
-                        , "**#999gia_tỏi NHỈNH, 999dt_M, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
-                        , "** 999gia_tỏi NHỈNH, 999dt_M, 999tang_ TẦNG, MẶT TIỀN  999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
-                        , "** 999gia_tỏi, 999dt_M, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
-                        , "**TRUNG TÂM Q7, 999gia_tỏi, 999dt_M, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_"
+                        , "**#999gia_tỷ , 999dt_m2, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                        , "** 999gia_tỷ , 999dt_m2, 999tang_ TẦNG, MẶT TIỀN  999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                        , "** 999gia_tỷ, 999dt_m2, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_, QUẬN 7, HCM"
+                        , "**TT Q7, 999gia_tỷ, 999dt_m2, 999tang_ TẦNG, MẶT TIỀN 999kv_, PHƯỜNG 999p_"
                     ]
                 }
 
@@ -378,10 +378,10 @@
                 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                 var listdt = [
-                    "-- Diện tích: 999dt_M (999ngang_m x 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
-                    , "-- Diện tích: 999dt_M (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
+                    "-- Dt: 999dt_M (999ngang_m x 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
+                    , "-- Dt: 999dt_M (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
                     , "-- Kết cấu: 999dt_M (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
-                    , "-- Diện tích: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
+                    , "-- Dt: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
                     , "-- Kết cấu: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
                     , "-- Kết cấu: 999ngang_m * 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
                 ]
@@ -478,7 +478,7 @@
                         '-- Sổ hồng chính chủ, sang tên công chứng ngay.',
                         '-- Sổ hồng riêng đẹp, hoàn công đủ, công chứng ngay',
                         '-- Sổ hồng riêng, xây đựng đúng giấy phép hoàn công đầy đủ.'
-                        , '-- SHR, hoàn công đầy đủ.'
+                        , '-- shr, hoàn công đầy đủ.'
 
                     ];
                     randomNumber = Math.floor(Math.random() * listShr.length);
