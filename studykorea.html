@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Element Picker</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+	
+	#randomElement {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        color: #721c24;
+		font-size: 40px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Random Element Picker</h1>
+    <div id="textBlock" hidden="true">
+        <p>
+		
+			kê bal: development
+<br>kom sêk: search, inquiry
+<br>kô kêk: customer / client
+<br>kong jang: factory
+<br>kong jong: process
+<br>kye hoek (oe = ui): planning
+<br>kôan li: management
+<br>ku bun: category, calssification/ sortation
+<br>kwon han: authority
+<br>kư rub: group
+<br>ki nưng: function
+<br>ki bôn: foundation / basic
+<br>ki jun: standard/ rule
+<br>ki tha: etc
+<br>nal jja: date
+<br>nê yong: content
+<br>dan kye: phase, step, stage, step by step
+<br>dad ki: close
+<br>dê sang: target/ object
+<br>dưng lôk: registration
+<br>myong: name/order
+<br>mul lyu: logistic
+<br>bak phan: thin plate
+<br>bang sik: method/way
+<br>bon hô: number
+<br>byôn kyông: change
+<br>bôk sa: copy/duplication
+<br>bu so: department
+<br>bun lyu: classification/ category
+<br>bi go: remark
+<br>sa bon: employee id number
+<br>sa yông: use
+<br>sa yông yo bu: use or not, available/use status
+<br>sa yông ja: user / users
+<br>sak je: delete/elimitation
+<br>sang se: detail
+<br>sang thê: delete
+<br>sê rô gô chim: refresh
+<br>son jê: wirerod
+<br>son thêk: select/choice
+<br>sol kye: design
+<br>song myong: name
+<br>su jong: update/modificaion
+<br>sun so: order / sequence
+<br>si kan: time
+<br>si jak: start
+<br>sin chong: application
+<br>sil hêng: execution
+<br>yol ki: open
+<br>wan ryô: complete
+<br>yo chong: request
+<br>i rưm: name
+<br>il si: date time
+<br>jak op: work
+<br>jê ryô: material
+<br>jo jang: save
+<br>jon che: whole/ entire
+<br>jong yol: sort
+<br>je môk: tittle
+<br>je jak: it development
+<br>jô chi: action/ measure
+<br>jô hoe: search
+<br>jông lyô: end
+<br>jông lyô il: end date
+<br>ju mum: order
+<br>jik bon: emoloyee id
+<br>jin hêng: progress
+<br>chaj ki: find
+<br>cho ri: process
+<br>chom bu: attach
+<br>che khư: check
+<br>chô ki hwa: reset
+<br>chu ga: add
+<br>chul ha: shipping
+<br>chul sô: cancel
+<br>khư gi: size
+<br>phyo jun: standard
+<br>phum jil: quality
+<br>hab kye: sum
+<br>hêng bôk sa: row coppy
+<br>hêng sak je: row delete
+<br>hêng chu ga: row add
+<br>hwak in: ok
+<br>hu phan: thick plate
+		
+		</p>
+    </div>
+	<br>
+    <button class="btn btn-primary" onclick="pickRandomElement()">Pick Random Element</button>
+    <br><br><br>
+	<p id="randomElement"></p>
+</div>
+
+<script>
+    function pickRandomElement() {
+        var text = document.getElementById('textBlock').innerText;
+        var lines = text.split('\n').filter(function(line) {
+            return line.trim() !== '';
+        });
+        var randomIndex = Math.floor(Math.random() * lines.length);
+        var randomElement = lines[randomIndex];
+        
+        document.getElementById('randomElement').innerText = randomElement;
+    }
+	
+	document.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+            pickRandomElement();
+        }
+    });
+	setInterval(pickRandomElement, 3000);
+</script>
+
+</body>
+</html>
