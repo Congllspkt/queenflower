@@ -1,0 +1,510 @@
+1. The man is holding a pencil - The man is sipping a cup of coffee - The man is wearing a short-sleeved shirt - The man is reading a newspaper.
+1. Người đàn ông đang cầm một cây bút chì - Người đàn ông đang nhấp một ngụm cà phê - Người đàn ông đang mặc áo sơ mi ngắn tay - Người đàn ông đang đọc báo.
+2. Various goods are laid out for sale - The orchard is full of fruit - The fruits are being placed in bags - The fruits have been piled in a truck.
+2. Nhiều loại hàng hóa được bày bán - Vườn cây ăn quả đầy ắp - Trái cây được đóng vào bao - Trái cây đã được chất lên xe tải.
+3. They're watching a sports event - They're turning on the computer - They're checking information from reference books - They're looking at a computer monitor.
+3. Họ đang xem một sự kiện thể thao - Họ đang bật máy tính - Họ đang kiểm tra thông tin từ sách tham khảo - Họ đang nhìn vào màn hình máy tính.
+4. There are some pedestrians crossing the road - There are trees on both sides of the road - The road is jammed with traffic - Cars are parked on only one side of the road.
+4. Có một số người đi bộ băng qua đường - Có cây ở cả hai bên đường - Đường bị kẹt xe - Ô tô chỉ đỗ ở một bên đường.
+5. The man is balanced on a ladder - The man is painting a picture - The man is reading a sign on a building - The man is hanging from some cables.
+5. Người đàn ông đang giữ thăng bằng trên một chiếc thang - Người đàn ông đang vẽ một bức tranh - Người đàn ông đang đọc một biển báo trên một tòa nhà - Người đàn ông đang treo mình trên một sợi cáp.
+6. A worker is loading cargo onto a plane - People are seated on an airplane - A set of stairs has been pushed up to a plane - There are several airplanes at the terminal.
+6. Một công nhân đang chất hàng lên máy bay - Mọi người đang ngồi trên máy bay - Một cầu thang đã được đẩy lên máy bay - Có một số máy bay ở nhà ga.
+7. She is hanging up her coat on a rack - She is shopping for clothes - She is holding her bag in her hand - She is wrapping up the clothes.
+7. Cô ấy đang treo áo khoác lên giá - Cô ấy đang mua quần áo - Cô ấy đang cầm túi trên tay - Cô ấy đang gói quần áo.
+8. They're dressed in identical uniforms - They're walking through the forest - They're all carrying bags on their shoulders - They're taking a walk in the country.
+8. Họ mặc đồng phục giống hệt nhau - Họ đang đi bộ qua khu rừng - Họ đều mang túi trên vai - Họ đang đi dạo ở nông thôn.
+9. There's a lamppost next to the railroad - A train is entering the station - The area is heavily wooded - A car is driving along the road.
+9. Có một cột đèn bên cạnh đường sắt - Một đoàn tàu đang vào ga - Khu vực này có nhiều cây cối rậm rạp - Một chiếc ô tô đang chạy dọc theo đường.
+10. The man is speaking into a microphone - The man is putting away his trumpet - The man is playing the musical instrument - The man is waving at the audience.
+10. Người đàn ông đang nói vào micro - Người đàn ông đang cất kèn trumpet - Người đàn ông đang chơi nhạc cụ - Người đàn ông đang vẫy tay chào khán giả.
+11. What time does our flight leave?
+11. Chuyến bay của chúng tôi khởi hành lúc mấy giờ?
+By 3 o'clock - About three or four times a day - It's scheduled to take off at 7:30.
+Đến 3 giờ - Khoảng ba hoặc bốn lần một ngày - Dự kiến ​​cất cánh lúc 7:30.
+12. Where did you leave your glasses?
+12. Bạn để quên kính ở đâu?
+By taxi - In my office - At 9 a.m.
+Bằng taxi - Tại văn phòng của tôi - Lúc 9 giờ sáng.
+13. When will the presentation be over?
+13. Khi nào bài thuyết trình sẽ kết thúc?
+OK, see you then - Over there in the hall - In about two hours.
+Được, gặp lại cậu lúc đó nhé - Ở đằng kia trong hành lang - Khoảng hai giờ nữa.
+14. Why were you late for the supervisors' workshop?
+14. Tại sao bạn đến muộn trong buổi hội thảo của giám sát viên?
+The road construction held me up - I'm working until 6 today - Yes, the supervisor asked me yesterday.
+Việc thi công đường đã cản trở tôi - Hôm nay tôi phải làm việc đến 6 giờ sáng - Vâng, hôm qua giám sát viên đã hỏi tôi.
+15. How will I recognize the guide?
+15. Tôi có thể nhận ra hướng dẫn này như thế nào?
+It's available - Yes, we can make it - She'll be waiting near exit 8.
+Có sẵn - Vâng, chúng tôi có thể đến - Cô ấy sẽ đợi gần lối ra số 8.
+16. Do you want me to install the operating system?
+16. Bạn có muốn tôi cài đặt hệ điều hành không?
+No, it should be delivered on time - No, I'll do it myself - That is quite a large operation.
+Không, nó phải được giao đúng hạn - Không, tôi sẽ tự làm - Đó là một hoạt động khá lớn.
+17. Would you prefer ice tea or lemonade?
+17. Bạn thích trà đá hay nước chanh?
+Yes, I can - In a refrigerator - Ice tea, please.
+Có, tôi có thể - Trong tủ lạnh - Trà đá nhé.
+18. Why don't you complain about the delay?
+18. Tại sao bạn không phàn nàn về sự chậm trễ?
+It was delayed over two hours. - Yes, it's very convenient - I think I will.
+Nó bị trì hoãn hơn hai giờ. - Vâng, rất tiện lợi - Tôi nghĩ là tôi sẽ làm vậy.
+19. What is Ms. Lydia's e-mail about?
+19. Nội dung email của cô Lydia là gì?
+I haven't checked yet. - Five days ago - We've already mailed it.
+Tôi vẫn chưa kiểm tra. - Năm ngày trước - Chúng tôi đã gửi nó rồi.
+20. Do you have the product evaluation form?
+20. Bạn có mẫu đánh giá sản phẩm không?
+Fill out the evaluation - No, I left it on my desk - He works in an advertising firm.
+Điền vào bản đánh giá - Không, tôi để quên nó trên bàn làm việc - Anh ấy làm việc tại một công ty quảng cáo.
+21. Why is that door locked?
+21. Tại sao cánh cửa đó lại bị khóa?
+In the safe - Yes, near the exit door - It's a restricted area.
+Trong két sắt - Có, gần cửa thoát hiểm - Đó là khu vực hạn chế.
+22. The final reports are in the cabinet, aren't they?
+22. Báo cáo cuối cùng đã có trong tủ rồi phải không?
+I'm not sure - Yes, he's in a meeting right now - We need more reporters.
+Tôi không chắc - Vâng, anh ấy đang họp lúc này - Chúng tôi cần thêm phóng viên.
+23. Who designed the booth for this year's exhibition?
+23. Ai là người thiết kế gian hàng cho triển lãm năm nay?
+By the end of next month - To the design department - One of my coworkers did.
+Vào cuối tháng sau - Đến phòng thiết kế - Một trong những đồng nghiệp của tôi đã làm.
+24. Isn't that grocery store open yet?
+24. Cửa hàng tạp hóa đó vẫn chưa mở sao?
+No, it's not my fault - No, I think it usually opens at 9 o'clock - I haven't read it yet.
+Không, không phải lỗi của tôi - Không, tôi nghĩ nó thường mở lúc 9 giờ - Tôi vẫn chưa đọc nó.
+25. Where is the working capital coming from?
+25. Vốn lưu động đến từ đâu?
+From headquarters - Yes, for the next few months from now - It's not expensive.
+Từ trụ sở chính - Vâng, trong vài tháng tới - Không đắt đâu.
+26. Let's check the chart one more time before our meeting.
+26. Chúng ta hãy kiểm tra lại biểu đồ một lần nữa trước khi họp nhé.
+I've already looked it over twice. - We should submit it on time - He's leaving to take the chart.
+Tôi đã xem lại hai lần rồi. - Chúng ta nên nộp đúng hạn. - Anh ấy đang đi lấy biểu đồ.
+27. It's expected to rain tomorrow, isn't it?
+27. Ngày mai dự kiến ​​trời sẽ mưa phải không?
+The report is due tomorrow. - No, I haven't seen it - No, it's going to be sunny.
+Báo cáo phải nộp vào ngày mai. - Không, tôi chưa xem. - Không, trời sẽ nắng.
+28. Have you finished writing the monthly report?
+28. Bạn đã viết xong báo cáo tháng chưa?
+Please write clearly. - It's almost complete - Yes, it'll be finished by Monday.
+Xin hãy viết rõ ràng. - Gần hoàn thành rồi. - Vâng, sẽ hoàn thành vào thứ Hai.
+29. Doesn't Mr. Tanaka work in the personnel department?
+29. Anh Tanaka không làm ở phòng nhân sự sao?
+No, I'm not here anymore. - Yes, I prefer to walk - No, he retired two weeks ago.
+Không, tôi không còn ở đây nữa. - Vâng, tôi thích đi bộ hơn. - Không, ông ấy đã nghỉ hưu cách đây hai tuần.
+30. Let's not make revisions until we get more accurate information.
+30. Chúng ta không nên sửa đổi cho đến khi có thông tin chính xác hơn.
+Oh, I think we already have enough data. - No, I like the fresh air - I don't know how to make it.
+Ồ, tôi nghĩ chúng ta đã có đủ dữ liệu rồi. - Không, tôi thích không khí trong lành - Tôi không biết làm thế nào để có được nó.
+31. Who won the contract to build the new bicycle path?
+31. Ai là người trúng thầu xây dựng đường dành cho xe đạp mới?
+Yes, we don't expect to win this year. - Creative Construction - Congratulations!
+Vâng, chúng tôi không mong đợi sẽ giành chiến thắng trong năm nay. - Creative Construction - Xin chúc mừng!
+32. Should complaint forms be sent to the manager, or the consumer affairs department?
+32. Mẫu đơn khiếu nại nên được gửi đến người quản lý hay bộ phận bảo vệ người tiêu dùng?
+Yes, I agree with you. - The customers were very upset - It depends on the nature of the problem.
+Vâng, tôi đồng ý với bạn. - Khách hàng rất khó chịu - Điều này phụ thuộc vào bản chất của vấn đề.
+33. When does the editorial department issue the newsletter?
+33. Ban biên tập phát hành bản tin khi nào?
+By registered writers. - On the last day of the month - A parking permit was issued yesterday.
+Bởi các tác giả đã đăng ký. - Vào ngày cuối cùng của tháng - Một giấy phép đỗ xe đã được cấp vào ngày hôm qua.
+34. We've just purchased several new copiers, haven't we?
+34. Chúng ta vừa mới mua một số máy photocopy mới phải không?
+Yes, we ordered them over the Internet. - It's included in the purchase price - Cream and sugar.
+Có, chúng tôi đã đặt hàng qua Internet. - Giá đã bao gồm trong giá mua - Kem và đường.
+35. Where do you think is the progress report?
+35. Bạn nghĩ báo cáo tiến độ nằm ở đâu?
+It progressed more rapidly. - I put it in the cabinet by the door - They will report your records every week.
+Nó tiến triển nhanh hơn. - Tôi cất nó vào tủ cạnh cửa - Họ sẽ báo cáo hồ sơ của bạn hàng tuần.
+36. I'm going on my coffee break.
+36. Tôi đang đi nghỉ uống cà phê.
+Thanks, but I don't need any help - A mechanic will fix it - I'll join you.
+Cảm ơn, nhưng tôi không cần bất kỳ sự giúp đỡ nào - Một thợ máy sẽ sửa nó - Tôi sẽ tham gia cùng bạn.
+37. You are planning to attend the formal computer training session today, aren't you?
+37. Bạn đang có kế hoạch tham dự buổi đào tạo máy tính chính thức vào hôm nay phải không?
+No, I couldn't see the training schedule yesterday. - It's compulsory, isn't it? - New computers for new employees.
+Không, hôm qua tôi không thấy lịch đào tạo. - Bắt buộc phải không? - Máy tính mới cho nhân viên mới.
+38. How did you get such a good price on the office furniture?
+38. Làm sao bạn có thể mua được đồ nội thất văn phòng với mức giá tốt như vậy?
+We got a special discount. - I took a taxi to the theater - Yes, she's at the office.
+Chúng tôi được giảm giá đặc biệt. - Tôi đi taxi đến rạp hát. - Vâng, cô ấy đang ở văn phòng.
+39. This local map is really complicated.
+39. Bản đồ địa phương này thực sự phức tạp.
+I'm not really good at comparing figures. - Nearly one week ago - Where are you trying to go?
+Tôi không giỏi so sánh số liệu lắm. - Gần một tuần trước - Bạn đang cố đi đâu vậy?
+40. Are you finished with that market research report, or do you need more time? Give me another hour or so - The store closes at 5:00 - All the trains are on time.
+40. Bạn đã hoàn thành báo cáo nghiên cứu thị trường chưa, hay bạn cần thêm thời gian? Cho tôi thêm một tiếng nữa - Cửa hàng đóng cửa lúc 5:00 - Tất cả các chuyến tàu đều đúng giờ.
+41-43 refer to the following conversation.
+41-43 tham khảo đoạn hội thoại sau.
+M: My Internet service is so slow.
+M: Dịch vụ Internet của tôi chậm quá.
+It's really affecting my work.
+Nó thực sự ảnh hưởng đến công việc của tôi.
+I think it's time that I changed Internet providers.
+Tôi nghĩ đã đến lúc tôi phải thay đổi nhà cung cấp dịch vụ Internet.
+w: You should contact Roger's Inc.
+w: Bạn nên liên hệ với Roger's Inc.
+That's the company that I use.
+Đó là công ty tôi sử dụng.
+They have great service staff, and their technical support is the best in the industry.
+Họ có đội ngũ nhân viên phục vụ tuyệt vời và dịch vụ hỗ trợ kỹ thuật của họ là tốt nhất trong ngành.
+M: Thank you for the suggestion.
+M: Cảm ơn vì gợi ý.
+I'll keep that in mind.
+Tôi sẽ ghi nhớ điều đó.
+w: And when you call, don't forget to mention my name.
+w: Và khi gọi, đừng quên nhắc đến tên tôi nhé.
+They'll give you a new contract discount and credit my account for referring a friend.
+Họ sẽ giảm giá cho hợp đồng mới và ghi có vào tài khoản của tôi vì đã giới thiệu bạn bè.
+44-46 refer to the following conversation.
+44-46 tham khảo đoạn hội thoại sau.
+M: Maria, were you able to ship the product for the customer's order in time for delivery?
+M: Maria, bạn có thể giao sản phẩm theo đơn đặt hàng của khách hàng kịp thời không?
+w: No, the shipping office was closed this morning.
+w: Không, văn phòng vận chuyển đã đóng cửa sáng nay.
+I've already faxed them twice this afternoon to remind them.
+Tôi đã fax cho họ hai lần vào chiều nay để nhắc nhở họ.
+M: Would you please try calling them?
+M: Bạn vui lòng thử gọi điện cho họ nhé?
+I have to contact the customer this evening,
+Tôi phải liên lạc với khách hàng vào tối nay,
+and I'd like to let him know when the delivery will arrive.
+và tôi muốn cho anh ấy biết khi nào hàng sẽ đến.
+w: OK, I will do it right away.
+w: Được, tôi sẽ làm ngay.
+47-49 refer to the following conversation.
+47-49 tham khảo đoạn hội thoại sau.
+M: Angela, I've just confirmed the departure times
+M: Angela, tôi vừa xác nhận thời gian khởi hành
+and it looks like our train will be delayed a couple of hours.
+và có vẻ như chuyến tàu của chúng ta sẽ bị chậm vài giờ.
+It's now expected to leave at 7:00.
+Bây giờ dự kiến ​​chuyến bay sẽ khởi hành lúc 7:00.
+w: That's a big problem.
+w: Đó là một vấn đề lớn.
+We won't arrive in London in order to make our 9:00 meeting with our partners.
+Chúng tôi sẽ không đến London để kịp cuộc họp lúc 9:00 với các đối tác.
+M: It will be okay.
+M: Sẽ ổn thôi.
+I was going to contact them anyway to confirm that
+Dù sao thì tôi cũng sẽ liên lạc với họ để xác nhận điều đó
+they received the documents I couriered earlier today.
+họ đã nhận được các tài liệu tôi gửi đi sớm hơn hôm nay.
+w: Alright,
+w: Được rồi,
+so you can let them know our situation.
+để bạn có thể cho họ biết tình hình của chúng tôi.
+50-52 refer to the following conversation.
+50-52 tham khảo đoạn hội thoại sau.
+M: Good afternoon.
+M: Chào buổi chiều.
+I am here to deliver two parcels for Karl Michaels.
+Tôi đến đây để giao hai bưu kiện cho Karl Michaels.
+Is this his office?
+Đây có phải là văn phòng của anh ấy không?
+w: Yes, but Mr. Michaels is out of town on business.
+w: Vâng, nhưng ông Michaels đang đi công tác xa.
+However, he should be back this afternoon.
+Tuy nhiên, anh ấy sẽ quay lại vào chiều nay.
+M: Are you able to sign for the documents? Or would you prefer that I return in a couple of hours?
+M: Bạn có thể ký vào giấy tờ không? Hay bạn muốn tôi quay lại sau vài giờ?
+w: I can sign for them.
+w: Tôi có thể ký cho họ.
+Just put the packages on the desk.
+Chỉ cần đặt các gói hàng lên bàn.
+53-55 refer to the following conversation.
+53-55 tham khảo đoạn hội thoại sau.
+M: Welcome to Mitchell's.
+M: Chào mừng đến với Mitchell.
+Do you want to hear about our specials today?
+Bạn có muốn nghe về chương trình khuyến mãi hôm nay của chúng tôi không?
+w: I don't know what I feel like,
+w: Tôi không biết tôi cảm thấy thế nào,
+so what would you recommend for lunch?
+vậy bạn có gợi ý gì cho bữa trưa không?
+M: Well, our club sandwich is very popular,
+M: Vâng, bánh sandwich câu lạc bộ của chúng tôi rất phổ biến,
+and I particularly like the chicken fingers that come with curly fries.
+và tôi đặc biệt thích món gà rán ăn kèm với khoai tây chiên xoắn.
+Does that sound good, or shall I name some other options?
+Nghe có vẻ ổn không, hay tôi nên nêu ra một số lựa chọn khác?
+w: I think I'll look over the menu one more time before I order.
+w: Tôi nghĩ tôi sẽ xem lại thực đơn thêm lần nữa trước khi gọi món.
+While I'm thinking, could you get me a chocolate milk?
+Trong lúc tôi đang suy nghĩ, bạn có thể lấy cho tôi một cốc sữa sô-cô-la được không?
+56-58 refer to the following conversation.
+56-58 tham khảo đoạn hội thoại sau.
+M: Hello, I'd like to apply for a credit card.
+M: Xin chào, tôi muốn đăng ký thẻ tín dụng.
+w: Do you have any identification containing both your address and signature, sir?
+w: Ông có giấy tờ tùy thân nào có ghi địa chỉ và chữ ký của ông không?
+M: Yes, of course.
+M: Vâng, tất nhiên rồi.
+Here's my driver's license.
+Đây là giấy phép lái xe của tôi.
+Do you require any other forms of ID?
+Bạn có cần bất kỳ giấy tờ tùy thân nào khác không?
+w: No, this driver's license is good enough.
+w: Không, bằng lái xe này đủ tốt rồi.
+Why don't you start filling out this form
+Tại sao bạn không bắt đầu điền vào mẫu này?
+while I photocopy your driver's license? 59-61 refer to the following conversation.
+trong khi tôi photocopy giấy phép lái xe của bạn? 59-61 tham khảo đoạn hội thoại sau.
+M: So, Sarah, has the bank contacted you since your interview with them?
+M: Vậy, Sarah, ngân hàng đã liên lạc với bạn kể từ khi bạn phỏng vấn họ chưa?
+w: Yes, they phoned this morning.
+w: Vâng, họ đã gọi điện vào sáng nay.
+They want me to meet with the vice-president of the company next Monday.
+Họ muốn tôi gặp phó chủ tịch công ty vào thứ Hai tuần tới.
+M: That's wonderful news! What time is the interview?
+M: Thật là tin tuyệt vời! Buổi phỏng vấn diễn ra lúc mấy giờ?
+w: They wanted to meet in the afternoon, right after lunch.
+w: Họ muốn gặp nhau vào buổi chiều, ngay sau bữa trưa.
+But I asked if I could have the interview in the morning instead.
+Nhưng tôi đã hỏi liệu tôi có thể phỏng vấn vào buổi sáng được không.
+62-64 refer to the following conversation.
+62-64 tham khảo đoạn hội thoại sau.
+M: Ms. Jeffrey, I won't be able to attend the seminar on Friday,
+M: Cô Jeffrey, tôi sẽ không thể tham dự hội thảo vào thứ sáu,
+so could you take notes for me?
+vậy bạn có thể ghi chép giúp tôi được không?
+w: No problem, Mr. Pauls.
+w: Không vấn đề gì, thưa ông Pauls.
+Are you finally going on that vacation you've been talking about?
+Bạn cuối cùng cũng sắp đi nghỉ như bạn đã nói rồi phải không?
+M: No, unfortunately not.
+M: Không, thật không may là không.
+I have to leave for New York tomorrow morning to meet with our new client.
+Tôi phải đi New York vào sáng mai để gặp khách hàng mới của chúng ta.
+We'll be discussing negotiations for the contract at his office,
+Chúng tôi sẽ thảo luận về các cuộc đàm phán hợp đồng tại văn phòng của anh ấy.
+so I'll need a few extra days to finalize things.
+vậy nên tôi sẽ cần thêm vài ngày để hoàn tất mọi việc.
+w: Wow, good luck with the talks.
+w: Chà, chúc bạn may mắn với cuộc nói chuyện nhé.
+I heard that the Johnson & Johnson contract would bring in a lot of revenue.
+Tôi nghe nói hợp đồng với Johnson & Johnson sẽ mang lại rất nhiều doanh thu.
+I'll let you know if they discuss anything important at the seminar on Friday.
+Tôi sẽ cho bạn biết nếu họ thảo luận bất kỳ điều gì quan trọng tại hội thảo vào thứ sáu.
+65-67 refer to the following conversation.
+65-67 tham khảo đoạn hội thoại sau.
+M: Ms. Dias, we'd like to introduce the Spanish edition of Marketing a Successful Product
+M: Cô Dias, chúng tôi muốn giới thiệu phiên bản tiếng Tây Ban Nha của Tiếp thị một sản phẩm thành công
+by the end of the quarter.
+vào cuối quý.
+w: That would mean I would have less than a month to complete the translation.
+w: Điều đó có nghĩa là tôi sẽ có chưa đầy một tháng để hoàn thành bản dịch.
+That won't be enough time to translate a 75-page article.
+Sẽ không đủ thời gian để dịch một bài viết dài 75 trang.
+M: Well, we may be able to delay the publishers a couple of extra weeks.
+M: Vâng, chúng ta có thể trì hoãn việc xuất bản thêm vài tuần nữa.
+Would that be better for you?
+Liệu điều đó có tốt hơn cho bạn không?
+w: If I dedicate myself exclusively to the project, five weeks could be possible.
+w: Nếu tôi dành toàn bộ tâm huyết cho dự án này thì có thể hoàn thành trong năm tuần.
+68-70 refer to the following conversation.
+68-70 tham khảo đoạn hội thoại sau.
+M: Did you see the review written up about Tangy Bangkok?
+M: Bạn đã đọc bài đánh giá về Tangy Bangkok chưa?
+It sounds like it has the best Thai food in town.
+Nghe nói ở đây có món ăn Thái ngon nhất thị trấn.
+w: I read the article, but I don't know if I agree.
+w: Tôi đã đọc bài viết này nhưng không biết tôi có đồng ý không.
+I had lunch there with Bill this past Monday.
+Tôi đã ăn trưa ở đó với Bill vào thứ Hai tuần trước.
+The food was just so-so, and the service could have been much better.
+Đồ ăn thì tạm được, còn dịch vụ thì có thể tốt hơn nhiều.
+M: Wow! That's surprising.
+M: Wow! Thật bất ngờ.
+What did you think of the atmosphere? The write-up said it was really fun.
+Bạn nghĩ gì về bầu không khí? Bài viết nói rằng nó thực sự vui.
+w: Yes, it was quite unique,
+w: Vâng, nó khá độc đáo,
+but it doesn't make up for the outrageous prices and average dishes.
+nhưng điều đó không thể bù đắp được mức giá cao ngất ngưởng và các món ăn trung bình.
+71-73 refer to the following telephone message.
+71-73 tham khảo tin nhắn điện thoại sau.
+Miss Damon.
+Cô Damon.
+This is Peter Bedford calling from the AirItalia Airlines security desk.
+Tôi là Peter Bedford gọi từ quầy an ninh của hãng hàng không AirItalia.
+I'm happy to inform you that we have located your baggage from flight Al 893.
+Tôi vui mừng thông báo rằng chúng tôi đã tìm thấy hành lý của bạn trên chuyến bay Al 893.
+We'll be delivering it to the Nardizzi Hotel.
+Chúng tôi sẽ giao nó đến Khách sạn Nardizzi.
+I believe this is your location while you're staying in Rome.
+Tôi tin rằng đây là vị trí của bạn trong thời gian bạn ở Rome.
+The delivery should arrive this afternoon before 4 p.m.
+Hàng sẽ được giao vào chiều nay trước 4 giờ chiều.
+Should you have any questions, please contact me at 1-888-567-4FLY.
+Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với tôi theo số 1-888-567-4FLY.
+We sincerely apologize for any inconvenience this may have caused you
+Chúng tôi thành thật xin lỗi vì bất kỳ sự bất tiện nào mà điều này có thể gây ra cho bạn
+and thank you once again for your continued patronage.
+và một lần nữa cảm ơn sự ủng hộ liên tục của các bạn.
+74-76 refer to the following announcement.
+74-76 tham khảo thông báo sau.
+Good evening, shoppers! Our store will be closing in 10 minutes.
+Chào buổi tối, người mua sắm! Cửa hàng của chúng tôi sẽ đóng cửa sau 10 phút nữa.
+Please take all of your purchases to the nearest cashier counter.
+Vui lòng mang tất cả hàng hóa bạn mua đến quầy thu ngân gần nhất.
+And don't miss out on our specials available in the cleaning products section.
+Và đừng bỏ lỡ các chương trình khuyến mãi của chúng tôi trong mục sản phẩm vệ sinh.
+All laundry detergents are at 25% off the original sticker price.
+Tất cả các loại bột giặt đều được giảm giá 25% so với giá niêm yết ban đầu.
+The customer service desk is now closing.
+Quầy dịch vụ khách hàng hiện đang đóng cửa.
+Should you have any questions, please ask to speak to the manager on duty, Ms. Barbara Henderson.
+Nếu bạn có bất kỳ thắc mắc nào, vui lòng yêu cầu nói chuyện với người quản lý đang trực, cô Barbara Henderson.
+We're pleased to announce that our regular business hours have been extended to serve all your shopping needs.
+Chúng tôi vui mừng thông báo rằng giờ làm việc thông thường của chúng tôi đã được kéo dài để phục vụ mọi nhu cầu mua sắm của bạn.
+Beginning next Monday, our new hours of operation will be 8 a.m. to 10 p.m., every day of the week.
+Bắt đầu từ thứ Hai tuần tới, giờ hoạt động mới của chúng tôi sẽ là từ 8 giờ sáng đến 10 giờ tối, tất cả các ngày trong tuần.
+We'd like to thank you once again for choosing Bargain Hunters and we look forward to serving you again.
+Chúng tôi muốn cảm ơn bạn một lần nữa vì đã chọn Bargain Hunters và chúng tôi mong muốn được phục vụ bạn lần nữa.
+77-79 refer to the following talk.
+77-79 tham khảo bài nói chuyện sau.
+Welcome to Peller Morrison.
+Chào mừng đến với Peller Morrison.
+My name is Cameron and I will be serving you this afternoon.
+Tên tôi là Cameron và tôi sẽ phục vụ bạn vào chiều nay.
+We have two special dishes prepared by our chef this lunch.
+Chúng tôi có hai món ăn đặc biệt được đầu bếp chuẩn bị cho bữa trưa này.
+I would highly recommend both the sun dried tomato and feta stuffed chicken
+Tôi thực sự muốn giới thiệu cả món cà chua phơi khô và gà nhồi phô mai feta
+or the wild rice stuffed bell peppers.
+hoặc ớt chuông nhồi gạo lứt.
+Both items are priced at 17 dollars and are served with a cup of soup and a side salad.
+Cả hai món đều có giá 17 đô la và được phục vụ kèm một cốc súp và một đĩa salad.
+Our pastry chef has also added an item to the dessert menu.
+Đầu bếp bánh ngọt của chúng tôi cũng đã thêm một món vào thực đơn tráng miệng.
+It's a lavender infused mousse cake served with chilled whipped cream for 8 dollars.
+Đây là một chiếc bánh mousse hương hoa oải hương ăn kèm với kem tươi lạnh có giá 8 đô la.
+Would you like something to drink while you are making your decisions?
+Bạn có muốn uống gì đó trong khi đưa ra quyết định không?
+80-82 refer to the following announcement.
+80-82 tham khảo thông báo sau.
+Good morning.
+Chào buổi sáng.
+As director of the Phases Company marketing department, I am happy to announce today some great news.
+Với tư cách là giám đốc bộ phận tiếp thị của Công ty Phases, hôm nay tôi vui mừng thông báo một số tin tuyệt vời.
+Our company has achieved record sales this quarter, a jump of nearly 15%.
+Công ty chúng tôi đã đạt được doanh số kỷ lục trong quý này, tăng gần 15%.
+I believe this growth is directly related to the excellent advertising our team developed to promote the new product line.
+Tôi tin rằng sự tăng trưởng này có liên quan trực tiếp đến hoạt động quảng cáo tuyệt vời mà nhóm chúng tôi đã phát triển để quảng bá dòng sản phẩm mới.
+I am confident that you will be thrilled to hear that due to the positive growth,
+Tôi tin chắc rằng bạn sẽ rất vui mừng khi nghe rằng do sự tăng trưởng tích cực,
+all Phases Company employees will receive an increase in their yearly bonuses.
+tất cả nhân viên của Công ty Phases sẽ được tăng tiền thưởng hàng năm.
+83-85 refer to the following radio report.
+83-85 tham khảo bản tin phát thanh sau đây.
+Good evening.
+Buổi tối vui vẻ.
+This is Dilana Miles at PRCK Light Jazz, your favorite jazz music station.
+Đây là Dilana Miles của PRCK Light Jazz, kênh nhạc jazz yêu thích của bạn.
+I wanted to remind all of you that Kevin Onawa, a renowned pianist, will be performing with the Toronto Symphony Orchestra tomorrow night.
+Tôi muốn nhắc tất cả mọi người rằng Kevin Onawa, một nghệ sĩ piano nổi tiếng, sẽ biểu diễn cùng Dàn nhạc giao hưởng Toronto vào tối mai.
+At eighty-nine years old, Mr. Onawa will be the oldest member to ever perform a piano solo alongside the famous group.
+Ở tuổi tám mươi chín, ông Onawa sẽ là thành viên lớn tuổi nhất từng biểu diễn độc tấu piano cùng nhóm nhạc nổi tiếng này.
+The concert will be aired on PRCK Light Jazz from 6 p.m. to 8 p.m.
+Buổi hòa nhạc sẽ được phát sóng trên PRCK Light Jazz từ 6 giờ tối đến 8 giờ tối.
+We are also thrilled to announce that Mr. Onawa will join us here at PRCK Light Jazz Friday morning.
+Chúng tôi cũng rất vui mừng thông báo rằng ông Onawa sẽ tham gia cùng chúng tôi tại PRCK Light Jazz vào sáng thứ sáu.
+Be sure to remember to listen to this once-in-a-lifetime interview.
+Đừng quên lắng nghe cuộc phỏng vấn có một không hai này.
+That's Friday morning at 9 a.m.
+Lúc đó là 9 giờ sáng thứ sáu.
+86-88 refer to the following introduction.
+86-88 tham khảo phần giới thiệu sau.
+Ladies and gentlemen, we are extremely honored to have tonight's guest speaker here with us.
+Thưa quý vị, chúng tôi vô cùng vinh dự khi được đón diễn giả khách mời tối nay ở đây.
+I'm sure I don't have to remind you of Dr.
+Tôi chắc chắn không cần phải nhắc bạn về Tiến sĩ.
+Nathan East's most prominent works, including his research on the effects of global warming.
+Các tác phẩm nổi bật nhất của Nathan East, bao gồm nghiên cứu của ông về tác động của hiện tượng nóng lên toàn cầu.
+After listening to Dr.
+Sau khi lắng nghe Tiến sĩ
+East speak at the Global Environmental Agenda in Tokyo last summer,
+East phát biểu tại Chương trình nghị sự Môi trường Toàn cầu ở Tokyo vào mùa hè năm ngoái,
+I asked him to present here tonight, though I was surprised to hear that
+Tôi đã yêu cầu anh ấy trình bày ở đây tối nay, mặc dù tôi rất ngạc nhiên khi nghe điều đó
+he would be interested in speaking to such a small group like ours.
+ông ấy sẽ rất hứng thú khi được nói chuyện với một nhóm nhỏ như chúng ta.
+Dr. East's talk tonight is entitled "Simple Ways to Reverse the Effects of Global Warming." We are pleased to have you with us, Dr. East.
+Bài nói chuyện tối nay của Tiến sĩ East có tựa đề "Những cách đơn giản để đảo ngược tác động của hiện tượng nóng lên toàn cầu". Chúng tôi rất vui khi được đón Tiến sĩ East tham gia cùng chúng tôi.
+89-91 refer to the following broadcast.
+89-91 tham khảo chương trình phát sóng sau.
+Good evening.
+Buổi tối vui vẻ.
+Thank you for joining us here at Gossip Central.
+Cảm ơn bạn đã tham gia cùng chúng tôi tại Gossip Central.
+I'm Jenny Jenkins.
+Tôi là Jenny Jenkins.
+We have a special guest with us here in the studio today, Ms. Sarah Polly, director of the hit movie "Jumping through Hoops." Actors and producers alike have praised Ms. Polly's directorial debut as reaching new heights in Hollywood.
+Hôm nay chúng ta có một vị khách đặc biệt trong trường quay này, cô Sarah Polly, đạo diễn của bộ phim ăn khách "Jumping through Hoops". Cả diễn viên và nhà sản xuất đều ca ngợi bộ phim đầu tay của cô Polly với vai trò đạo diễn đã đạt đến tầm cao mới ở Hollywood.
+The storyline of this film mirrors the hardships that Sarah herself has faced throughout her life.
+Cốt truyện của bộ phim này phản ánh những khó khăn mà chính Sarah đã phải đối mặt trong suốt cuộc đời mình.
+After many years of struggling in the film industry, it looks as though Ms. Sarah Polly has finally caught a break.
+Sau nhiều năm vật lộn trong ngành công nghiệp điện ảnh, có vẻ như cuối cùng cô Sarah Polly đã có được bước đột phá.
+So, Ms. Polly, how did you stay motivated over nearly a decade? Ten years can seem like a lifetime.
+Vậy, cô Polly, làm sao cô có thể duy trì động lực trong gần một thập kỷ? Mười năm có thể giống như cả một đời người.
+Many people would have given up after just five years or so.
+Nhiều người đã bỏ cuộc chỉ sau khoảng năm năm.
+92-94 refer to the following advertisement.
+92-94 tham khảo quảng cáo sau.
+Good morning, this is Christina from Jiffy Lube Car Services.
+Xin chào buổi sáng, tôi là Christina từ Jiffy Lube Car Services.
+We've been a member of the Better Business Bureau for over five years, and we're proud to announce the grand opening of our new and improved store.
+Chúng tôi đã là thành viên của Better Business Bureau trong hơn năm năm và tự hào thông báo về lễ khai trương cửa hàng mới và được cải thiện hơn của chúng tôi.
+That's right, we've expanded.
+Đúng vậy, chúng tôi đã mở rộng.
+We still offer the same great service on oil changes, tire rotation, alignment, and windshield repair.
+Chúng tôi vẫn cung cấp dịch vụ tuyệt vời như vậy về thay dầu, đảo lốp, cân chỉnh và sửa kính chắn gió.
+To celebrate the grand opening of our new store, we are offering a special discount.
+Để chào mừng lễ khai trương cửa hàng mới, chúng tôi đang có chương trình giảm giá đặc biệt.
+Only this weekend, purchase any discounted service package and receive a free oil change.
+Chỉ cuối tuần này, hãy mua bất kỳ gói dịch vụ giảm giá nào và nhận ngay một lần thay dầu miễn phí.
+If you would like more information, or to book an appointment, please call us at 679-7310.
+Nếu bạn muốn biết thêm thông tin hoặc đặt lịch hẹn, vui lòng gọi cho chúng tôi theo số 679-7310.
+95-97 refer to the following news report.
+95-97 tham khảo bản tin sau.
+Next up at 6:00, a special look at health care.
+Tiếp theo lúc 6:00, chúng ta sẽ xem nội dung đặc biệt về chăm sóc sức khỏe.
+But first, at the city courthouse today,
+Nhưng trước tiên, tại tòa án thành phố ngày hôm nay,
+members of the community met with local law enforcement officials to discuss the growing problem of violence.
+các thành viên trong cộng đồng đã gặp gỡ các viên chức thực thi pháp luật địa phương để thảo luận về vấn đề bạo lực ngày càng gia tăng.
+Domestic disputes were the main area of concern.
+Tranh chấp nội bộ là vấn đề đáng quan tâm nhất.
+The police force is considering a zero tolerance policy with regard to arrests.
+Lực lượng cảnh sát đang cân nhắc chính sách không khoan nhượng đối với việc bắt giữ.
+Many supporters of the decision feel that it will help to make the community a safer place.
+Nhiều người ủng hộ quyết định này cảm thấy rằng nó sẽ giúp cộng đồng trở nên an toàn hơn.
+And judges believe it will reduce the number of cases brought to court.
+Và các thẩm phán tin rằng điều này sẽ làm giảm số lượng các vụ án được đưa ra tòa.
+However, a few upset citizens joined the talks downtown
+Tuy nhiên, một số công dân khó chịu đã tham gia các cuộc đàm phán ở trung tâm thành phố
+to raise concerns about the possibility of false accusations and wrongful arrests.
+nêu lên mối lo ngại về khả năng bị buộc tội sai và bắt giữ oan.
+98-100 refer to the following telephone message.
+98-100 tham khảo tin nhắn điện thoại sau.
+Hello, Bob.
+Xin chào, Bob.
+This is Wanda St. Pierre from parking services.
+Đây là Wanda St. Pierre từ dịch vụ đỗ xe.
+I wanted to inform you that the parking garage will be under repairs beginning on Tuesday
+Tôi muốn thông báo với bạn rằng bãi đỗ xe sẽ được sửa chữa bắt đầu từ thứ Ba
+while some issues with the facilities are taken care of.
+trong khi một số vấn đề về cơ sở vật chất vẫn đang được giải quyết.
+The project should require three days, and the area should be available by Friday.
+Dự án sẽ mất ba ngày và khu vực này sẽ sẵn sàng vào thứ sáu.
+I realize that many of your employees drive to work,
+Tôi nhận ra rằng nhiều nhân viên của bạn lái xe đi làm,
+so please apologize for any inconvenience this may cause them.
+Vì vậy, xin hãy tha thứ cho sự bất tiện này.
+A shuttle bus will be provided from the main entrance each morning and afternoon on Wednesday and Thursday.
+Sẽ có xe buýt đưa đón từ lối vào chính vào mỗi buổi sáng và buổi chiều thứ Tư và thứ Năm.
+Let me know if you have any downtown meetings, and I should be able to arrange transportation.
+Hãy cho tôi biết nếu bạn có cuộc họp nào ở trung tâm thành phố để tôi có thể sắp xếp phương tiện đi lại.
