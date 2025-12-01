@@ -575,7 +575,8 @@ async function getFirstAvailableImage(folderPath) {
         try {
             const response = await fetch(imagePath, { method: 'HEAD' });
             if (response.ok) {
-                return imagePath;
+                // return imagePath;
+                return "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3";
             }
         } catch (error) {
             // Continue to next image
@@ -583,7 +584,8 @@ async function getFirstAvailableImage(folderPath) {
     }
     
     // Fallback
-    return `${folderPath}/${commonFirstImages[0]}`;
+    // return `${folderPath}/${commonFirstImages[0]}`;
+    return "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3";
 }
 
 // Show error message
