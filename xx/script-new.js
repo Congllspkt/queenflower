@@ -256,7 +256,7 @@ function createPropertyCard(property, index) {
                 <div class="property-type">${property['Loại BDS']}</div>
             </div>
             <div class="property-details">
-                <div class="property-title">${property['Loại BDS']} tại ${property['Đường']}</div>
+                <div class="property-title">${property['Loại BDS']} - ${property['Đường']}</div>
                 <div class="property-address">
                     <i class="fas fa-map-marker-alt"></i>
                     ${property['Đường']}, ${property['Phường']}, Quận ${property['Quận']}
@@ -297,7 +297,7 @@ function showPropertyDetail(property) {
     // Show modal immediately with loading state
     modalBody.innerHTML = `
         <div class="modal-header">
-            <h2>${property['Loại BDS']} - ${property['Đường']}</h2>
+            <h2>${property['Loại BDS']} tại ${property['Đường']}</h2>
             <div class="property-address">
                 <i class="fas fa-map-marker-alt"></i>
                 ${property['Đường']}, ${property['Phường']}, Quận ${property['Quận']}
@@ -576,7 +576,7 @@ async function getFirstAvailableImage(folderPath) {
             const response = await fetch(imagePath, { method: 'HEAD' });
             if (response.ok) {
                 // return imagePath;
-                return "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3";
+                return "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" ;
             }
         } catch (error) {
             // Continue to next image
@@ -650,45 +650,10 @@ function initializeMobileEnhancements() {
     }
     
     // Optimize modal for mobile
-    const modal = document.getElementById('propertyModal');
+    const modal = document.getElementById('property-modal');
     if (modal) {
         modal.addEventListener('touchmove', function(e) {
-            // Prevent body scroll when modal is open
-            if (e.target === this) {
-                e.preventDefault();
-            }
-        }, { passive: false });
-    }
-    
-    // Add swipe to close modal
-    let startY = 0;
-    const modalContent = document.querySelector('.modal-content');
-    if (modalContent) {
-        modalContent.addEventListener('touchstart', function(e) {
-            startY = e.touches[0].clientY;
-        }, { passive: true });
-        
-        modalContent.addEventListener('touchmove', function(e) {
-            const currentY = e.touches[0].clientY;
-            const diff = startY - currentY;
-            
-            if (diff < -50) { // Swipe down
-                this.style.transform = `translateY(${Math.abs(diff - 50)}px)`;
-                this.style.opacity = Math.max(0.5, 1 - Math.abs(diff - 50) / 200);
-            }
-        }, { passive: true });
-        
-        modalContent.addEventListener('touchend', function(e) {
-            const currentY = e.changedTouches[0].clientY;
-            const diff = startY - currentY;
-            
-            if (diff < -100) { // Swipe down enough to close
-                closeModal();
-            } else {
-                // Reset position
-                this.style.transform = '';
-                this.style.opacity = '';
-            }
+            // Allow normal scrolling in modal
         }, { passive: true });
     }
     
