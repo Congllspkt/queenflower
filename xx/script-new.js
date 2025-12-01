@@ -238,18 +238,7 @@ function createPropertyCard(property, index) {
     // Get main image from property folder
     const imageFolder = property['Hình ảnh'];
     // const mainImage = `${imageFolder}/hinh_1.jpg`; // Default fallback
-    const mainImage = `https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3`; // Default fallback
-    
-    // Try to get first available image
-    getFirstAvailableImage(imageFolder).then(imagePath => {
-        const imgElement = document.querySelector(`.property-card[data-index="${index}"] .property-image img`);
-        if (imgElement && imagePath !== mainImage) {
-            imgElement.src = imagePath;
-        }
-    }).catch(error => {
-        console.log('Using fallback image for property', index);
-    });
-    
+    const mainImage = `https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3`; // Default fallback    
     return `
         <div class="property-card" data-index="${index}">
             <div class="property-image">
