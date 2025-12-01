@@ -379,43 +379,43 @@ function showPropertyDetail(property) {
         // Show fallback images immediately
         modalImagesSection.innerHTML = `
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_1.jpg" alt="Property Image 1" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 1" 
                      onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_2.jpg" alt="Property Image 2" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 2" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_3.jpg" alt="Property Image 3" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 3" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_4.jpg" alt="Property Image 4" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 4" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_5.jpg" alt="Property Image 5" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 5" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_6.jpg" alt="Property Image 6" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 6" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_7.jpg" alt="Property Image 7" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 7" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_8.jpg" alt="Property Image 8" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 8" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_9.jpg" alt="Property Image 9" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 9" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/hinh_10.jpg" alt="Property Image 10" 
+                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 10" 
                      onerror="this.style.display='none'">
             </div>
         `;
@@ -651,7 +651,8 @@ async function loadImagesFromFolder(folderPath) {
     // Return at least one image (fallback)
     if (uniqueImages.length === 0) {
         console.log('No images found, using fallback');
-        return [`${folderPath}/hinh_1.jpg`];
+        // return [`${folderPath}/hinh_1.jpg`];
+        return [`${folderPath}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3`];
     }
     
     return uniqueImages.slice(0, 15); // Limit to 15 images max
