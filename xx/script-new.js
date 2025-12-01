@@ -237,7 +237,8 @@ function displayProperties(properties) {
 function createPropertyCard(property, index) {
     // Get main image from property folder
     const imageFolder = property['Hình ảnh'];
-    const mainImage = `${imageFolder}/hinh_1.jpg`; // Default fallback
+    // const mainImage = `${imageFolder}/hinh_1.jpg`; // Default fallback
+    const mainImage = `https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3`; // Default fallback
     
     // Try to get first available image
     getFirstAvailableImage(imageFolder).then(imagePath => {
@@ -256,7 +257,7 @@ function createPropertyCard(property, index) {
                 <div class="property-type">${property['Loại BDS']}</div>
             </div>
             <div class="property-details">
-                <div class="property-title">${property['Loại BDS']} tại ${property['Đường']}</div>
+                <div class="property-title">${property['Loại BDS']} - ${property['Đường']}</div>
                 <div class="property-address">
                     <i class="fas fa-map-marker-alt"></i>
                     ${property['Đường']}, ${property['Phường']}, Quận ${property['Quận']}
@@ -377,45 +378,46 @@ function showPropertyDetail(property) {
     const modalImagesSection = document.querySelector('.modal-images');
     if (modalImagesSection) {
         // Show fallback images immediately
+        //  <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 1" 
         modalImagesSection.innerHTML = `
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 1" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 1" 
                      onerror="this.src='https://via.placeholder.com/300x200?text=No+Image'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 2" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 2" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 3" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 3" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 4" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 4" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 5" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 5" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 6" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 6" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 7" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 7" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 8" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 8" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 9" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 9" 
                      onerror="this.style.display='none'">
             </div>
             <div class="modal-image">
-                <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 10" 
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 10" 
                      onerror="this.style.display='none'">
             </div>
         `;
