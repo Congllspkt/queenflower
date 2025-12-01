@@ -237,8 +237,18 @@ function displayProperties(properties) {
 function createPropertyCard(property, index) {
     // Get main image from property folder
     const imageFolder = property['Hình ảnh'];
-    // const mainImage = `${imageFolder}/hinh_1.jpg`; // Default fallback
-    const mainImage = `https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3`; // Default fallback    
+    const mainImage = `https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3`; // Default fallback
+    
+    // Try to get first available image
+    getFirstAvailableImage(imageFolder).then(imagePath => {
+        const imgElement = document.querySelector(`.property-card[data-index="${index}"] .property-image img`);
+        if (imgElement && imagePath !== mainImage) {
+            imgElement.src = imagePath;
+        }
+    }).catch(error => {
+        console.log('Using fallback image for property', index);
+    });
+    
     return `
         <div class="property-card" data-index="${index}">
             <div class="property-image">
@@ -246,7 +256,7 @@ function createPropertyCard(property, index) {
                 <div class="property-type">${property['Loại BDS']}</div>
             </div>
             <div class="property-details">
-                <div class="property-title">${property['Loại BDS']} - ${property['Đường']}</div>
+                <div class="property-title">${property['Loại BDS']} tại ${property['Đường']}</div>
                 <div class="property-address">
                     <i class="fas fa-map-marker-alt"></i>
                     ${property['Đường']}, ${property['Phường']}, Quận ${property['Quận']}
@@ -287,7 +297,7 @@ function showPropertyDetail(property) {
     // Show modal immediately with loading state
     modalBody.innerHTML = `
         <div class="modal-header">
-            <h2>${property['Loại BDS']} tại ${property['Đường']}</h2>
+            <h2>${property['Loại BDS']} - ${property['Đường']}</h2>
             <div class="property-address">
                 <i class="fas fa-map-marker-alt"></i>
                 ${property['Đường']}, ${property['Phường']}, Quận ${property['Quận']}
@@ -367,7 +377,6 @@ function showPropertyDetail(property) {
     const modalImagesSection = document.querySelector('.modal-images');
     if (modalImagesSection) {
         // Show fallback images immediately
-        //  <img src="${imageFolder}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 1" 
         modalImagesSection.innerHTML = `
             <div class="modal-image">
                 <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3" alt="Property Image 1" 
@@ -411,6 +420,7 @@ function showPropertyDetail(property) {
             </div>
         `;
     }
+}
 
 // Setup event listeners
 function setupEventListeners() {
@@ -551,6 +561,29 @@ function formatPrice(price) {
         minimumFractionDigits: 1,
         maximumFractionDigits: 1
     });
+}
+
+
+// Function to get first available image for property card
+async function getFirstAvailableImage(folderPath) {
+    const commonFirstImages = [
+        'hinh_1.jpg'
+    ];
+    
+    for (const imageName of commonFirstImages) {
+        const imagePath = `${folderPath}/${imageName}`;
+        try {
+            const response = await fetch(imagePath, { method: 'HEAD' });
+            if (response.ok) {
+                return imagePath;
+            }
+        } catch (error) {
+            // Continue to next image
+        }
+    }
+    
+    // Fallback
+    return `${folderPath}/${commonFirstImages[0]}`;
 }
 
 // Show error message
