@@ -422,30 +422,6 @@ function showPropertyDetail(property) {
             </div>
         `;
     }
-    
-    // Try to load more images in background (optional enhancement)
-    loadImagesFromFolder(imageFolder).then(images => {
-        console.log('Images loaded for modal:', images);
-        
-        if (images.length > 10) {
-            // If we found more than 10 images, update with all detected images
-            const imagesHTML = images.map((img, index) => `
-                <div class="modal-image">
-                    <img src="${img}" alt="Property Image ${index + 1}" loading="lazy" 
-                         onerror="this.style.display='none'">
-                </div>
-            `).join('');
-
-            const modalImagesSection = document.querySelector('.modal-images');
-            if (modalImagesSection) {
-                modalImagesSection.innerHTML = imagesHTML;
-            }
-        }
-    }).catch(error => {
-        console.error('Error loading images:', error);
-        // Images already loaded from fallback, no need to do anything
-    });
-}
 
 // Setup event listeners
 function setupEventListeners() {
@@ -586,102 +562,6 @@ function formatPrice(price) {
         minimumFractionDigits: 1,
         maximumFractionDigits: 1
     });
-}
-
-// Function to load all images from a folder dynamically
-async function loadImagesFromFolder(folderPath) {
-    console.log('Loading images from folder:', folderPath);
-    
-    const images = [];
-    
-    // Try common image patterns with sequential numbers
-    const patterns = [
-        // hinh_1.jpg through hinh_20.jpg
-        ...Array.from({length: 20}, (_, i) => `hinh_${i + 1}.jpg`),
-        // 1.jpg through 20.jpg  
-        ...Array.from({length: 20}, (_, i) => `${i + 1}.jpg`),
-        // image1.jpg through image20.jpg
-        ...Array.from({length: 20}, (_, i) => `image${i + 1}.jpg`),
-        // Common named images
-        'main.jpg', 'cover.jpg', 'front.jpg', 'exterior.jpg',
-        'living-room.jpg', 'livingroom.jpg', 'living.jpg',
-        'bedroom.jpg', 'bed.jpg', 'room.jpg',
-        'kitchen.jpg', 'bathroom.jpg', 'bath.jpg',
-        'garden.jpg', 'yard.jpg', 'balcony.jpg',
-        'interior.jpg', 'inside.jpg', 'outside.jpg'
-    ];
-    
-    // Test each pattern and collect valid images
-    const imagePromises = patterns.map(async (pattern) => {
-        const imagePath = `${folderPath}/${pattern}`;
-        try {
-            const response = await fetch(imagePath, { method: 'HEAD' });
-            if (response.ok && response.headers.get('content-type')?.startsWith('image/')) {
-                console.log('Found valid image:', imagePath);
-                return imagePath;
-            }
-        } catch (error) {
-            // Image doesn't exist or error occurred
-        }
-        return null;
-    });
-    
-    // Wait for all checks to complete
-    const results = await Promise.all(imagePromises);
-    
-    // Filter out null results and add to images array
-    results.forEach(imagePath => {
-        if (imagePath) {
-            images.push(imagePath);
-        }
-    });
-    
-    // Remove duplicates and sort
-    const uniqueImages = [...new Set(images)];
-    uniqueImages.sort((a, b) => {
-        // Sort to put hinh_1, hinh_2, etc. in order
-        const aNum = a.match(/(\d+)/);
-        const bNum = b.match(/(\d+)/);
-        if (aNum && bNum) {
-            return parseInt(aNum[1]) - parseInt(bNum[1]);
-        }
-        return a.localeCompare(b);
-    });
-    
-    console.log(`Found ${uniqueImages.length} images in ${folderPath}:`, uniqueImages);
-    
-    // Return at least one image (fallback)
-    if (uniqueImages.length === 0) {
-        console.log('No images found, using fallback');
-        // return [`${folderPath}/hinh_1.jpg`];
-        return [`${folderPath}/https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3`];
-    }
-    
-    return uniqueImages.slice(0, 15); // Limit to 15 images max
-}
-
-// Function to get first available image for property card
-async function getFirstAvailableImage(folderPath) {
-    const commonFirstImages = [
-        'hinh_1.jpg', '1.jpg', 'main.jpg', 'cover.jpg', 'front.jpg',
-        'hinh_1.png', '1.png', 'main.png', 'cover.png',
-        'image1.jpg', 'img1.jpg', 'photo1.jpg'
-    ];
-    
-    for (const imageName of commonFirstImages) {
-        const imagePath = `${folderPath}/${imageName}`;
-        try {
-            const response = await fetch(imagePath, { method: 'HEAD' });
-            if (response.ok) {
-                return imagePath;
-            }
-        } catch (error) {
-            // Continue to next image
-        }
-    }
-    
-    // Fallback
-    return `${folderPath}/hinh_1.jpg`;
 }
 
 // Show error message
